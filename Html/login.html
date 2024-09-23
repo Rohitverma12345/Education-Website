@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+     <!-- open sans -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+    <title>Login Page</title>
+    <link rel="stylesheet" href="../Css/main.css">
+</head>
+<body>
+    <div>
+        <header id="login_header">
+            <nav class="navbar">
+                
+                <div class="navbar-container">
+                    <a href="#" class="logo">
+                        <img src="../images/logo 1.png" alt="Logo">
+                    </a>
+                    <ul class="nav-links">
+                        <li><a href="../Html/home.html" class="active">Home</a></li>
+                        <li><a href="../Html/course.html">Courses</a></li>
+                        <li id="my-courses-link"><a href="../Html/mycourse.html">My Courses</a></li>
+                        <li id="add-courses-link"><a href="../Html/addcourse.html">Add Courses</a></li>
+                        <li><a href="../Html/contact.html">Contact</a></li>
+                    </ul>
+                    <div class="auth-buttons">
+                        
+                           
+                            <button id="auth-button" onclick="redirectToLogin()"  class="login-btn">  <i class="fas fa-sign-in-alt icon-space" aria-hidden="true"></i>Login</button>
+                        
+                        
+                        <button onclick="registerUser()" class="register-btn"><i class="fas fa-users icon-space"></i>Register</button>
+                    </div>
+                     
+                     <div class="hamburger">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </div>
+            </nav>
+            <div class="hero-section">
+                <h1>Login</h1>
+                <p>Login</p>
+                
+            </div>
+            
+        </header>
+
+        
+        <div class="login">
+            
+            <form id="login-form">
+                <div class="div1">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" placeholder="Enter Username"><br><br>
+                </div>
+               
+                <div class="div2">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Enter Password"><br><br>
+                </div>
+               
+                <div class="div3">
+                    <input type="submit" value="Login" id="login-btn2">
+                   
+                    <a href="../Signup/signup.html" id="signup-btn2">Signup</a>
+                </div>
+                
+            </form>
+        </div>
+
+
+       <!-- Newsletter -->
+       <div class="newsletter">
+        <h2>Get Newsletter</h2>
+        <p>Your Download Should Start Automatically, If Not Click Here. Should I Give Up, Huh?</p>
+        <div id="newsletter-btn">
+            <input type="text" placeholder="Email" name="email">
+            <button type="submit">Get It Now   </button>
+        </div>
+        
+      </div>
+
+
+
+      <!-- Footer -->
+      <div class="footer">
+        <div class="footer-container">
+            <div class="footer-section about">
+                <img  id="logo-foot" src="../images/logo 3.png">
+                <p>
+                    Discover a world of knowledge at our esteemed education institute. 
+                    We foster academic excellence, creativity, and personal growth. Our innovative programs ensure 
+                    a transformative learning experience, preparing students for a successful future.
+                </p>
+            </div>
+            <div class="footer-section contact">
+                <h2>Contact</h2>
+                <p>329 Queensberry Street, North Melbourne,<br> VIC 3051, Australia.</p>
+                <p>123 456 7890</p>
+                <p>Support@Edumy.Com</p>
+            </div>
+            <div class="footer-section company">
+                <h2>Company</h2>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Become a Teacher</a></li>
+                </ul>
+            </div>
+            <div class="footer-section programs">
+                <h2>Programs</h2>
+                <ul>
+                    <li><a href="#">Nanodegree Plus</a></li>
+                    <li><a href="#">Veterans</a></li>
+                    <li><a href="#">Georgia</a></li>
+                    <li><a href="#">Self-Driving Car</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright © 2023 Education Theme. All Rights Reserved</p>
+        </div>
+    </div>
+    
+    </div>
+    
+
+    <script>
+       // Register User
+function registerUser() {
+    window.location.href = "../Html/signup.html";
+}
+
+// Handle login form submission
+document.getElementById('login-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
+
+    const registeredUser = JSON.parse(localStorage.getItem(username));
+    if (registeredUser && registeredUser.password === password) {
+        alert('Login Successful!');
+        localStorage.setItem('isLoggedIn', true);
+        localStorage.setItem('userRole', registeredUser.role);
+        updateAuthButton(); // Update the auth button after login
+        window.location.href = "../Html/home.html";
+    } else {
+        alert('Invalid username or password!');
+    }
+});
+
+// Function to handle logout
+function logoutUser() {
+    localStorage.removeItem('isLoggedIn');
+    localStorage.removeItem('userRole');
+    alert('You have been logged out!');
+    updateAuthButton(); // Update the auth button after logout
+    window.location.href = "../Html/home.html";
+}
+
+// Function to update the auth button based on login status
+function updateAuthButton() {
+    const authButton = document.getElementById('auth-button');
+    const isLoggedIn = localStorage.getItem('isLoggedIn');
+    
+    if (isLoggedIn) {
+        authButton.textContent = 'Logout';
+        authButton.onclick = logoutUser;
+    } else {
+        authButton.textContent = 'Login';
+        authButton.onclick = redirectToLogin;
+    }
+}
+
+// Function to redirect to the login page
+function redirectToLogin() {
+    window.location.href = "../Html/login.html";
+}
+
+// Update the auth button on page load
+updateAuthButton();
+
+
+
+
+
+
+
+// Active Page Underline
+document.addEventListener('DOMContentLoaded', () => {
+    const currentPath = window.location.pathname;
+    const navLinks = document.querySelectorAll('.nav-links li a');
+
+    // Remove 'active' class from all links
+    navLinks.forEach(link => {
+        link.classList.remove('active');
+    });
+
+    // Add 'active' class to the link that matches the current page
+    navLinks.forEach(link => {
+        if (link.getAttribute('href').includes(currentPath)) {
+            link.classList.add('active');
+        }
+    });
+});
+ 
+    </script>
+    <!-- <script src="../Js/common.js"></script> -->
+</body>
+</html>

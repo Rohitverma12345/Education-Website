@@ -1,0 +1,2711 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    
+}
+
+/* Hide My Courses and Add Courses links by default */
+#my-courses-link, 
+#add-courses-link {
+    display: none;
+}
+/* Navbar Styles */
+/* header{
+    background-image: url("../images/1\ 3.png");
+    background: linear-gradient(to right, rgba(239, 119, 14, 0.7), rgba(6, 79, 238, 0.5)), url('../images/1\ 3.png') no-repeat center center/cover; 
+} */
+#home_header{
+    background-image: url("../images/1\ 3.png");
+    background: linear-gradient(to right, rgba(239, 119, 14, 0.7), rgba(6, 79, 238, 0.5)), url('../images/1\ 3.png') no-repeat center center/cover; 
+}
+.navbar {
+    /* background-color: #002852; */
+    border-bottom: 2px solid rgb(195, 192, 192);
+    color: white;
+    padding: 15px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-container {
+    width: 100%;
+    /* max-width: 1200px; */
+    /* margin: 0 auto; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* justify-content: flex-start; */
+    /* align-items: center; */
+}
+.logo{
+    width: 20%;
+}
+
+.logo img {
+    /* max-width: 100px; */
+    /* height: auto; */
+    margin-left: 150px;
+
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    width: 60%;
+
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+    font-family: "Nunito", sans-serif;
+    font-size: 20px;
+}
+
+.nav-links li a:hover {
+    color: #f4b400;
+}
+
+.auth-buttons {
+    width: 20%;
+    /* display: flex; */
+    gap: 15px;
+    align-items: flex-end;
+}
+
+.login-btn{
+    background-color: white;
+    border: none;
+    padding: 10px 20px;
+    color: #002852;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: "Nunito", sans-serif;
+    font-size: 18px;
+    border-radius: 10px;
+    margin-right: 8px;
+    
+}
+.logout-btn{
+    background-color: white;
+    border: none;
+    padding: 10px 28px;
+    color: #002852;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: "Nunito", sans-serif;
+    font-size: 18px;
+    border-radius: 10px;
+    margin-right: 8px;
+    margin-bottom: 10px;
+    
+}
+.register-btn {
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+    /* transition: background-color 0.3s ease; */
+    font-family: "Nunito", sans-serif;
+    font-size: 18px;
+    
+}
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    margin-right: 20px;
+}
+.nav-links li a.active {
+    border-bottom: 2px solid white;
+}
+
+.nav-links li a:hover {
+    color: #f4b400;
+    border-bottom: 2px solid #f4b400;
+}
+.nav-links li a.active {
+    border-bottom: 2px solid white;
+}
+
+.nav-links li a:hover {
+    color: #f4b400;
+    border-bottom: 2px solid #f4b400;
+}
+
+.icon-space {
+    margin-right: 8px; /* Adjust the margin as needed */
+}
+/* .login-btn:hover, .register-btn:hover {
+    background-color: #d29b00;
+} */
+
+
+
+/* Hero Section */
+.hero-section {
+    /* background-image: url("../images/1\ 3.png"); */
+    text-align: center;
+    /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); */
+    color: white;
+    padding: 150px 20px;
+}
+
+.hero-section h1 {
+    font-size: 52px;
+    margin-bottom: 20px;
+    font-family: "Open Sans", sans-serif;
+}
+
+.hero-section p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+}
+
+.cta-btn {
+    background-color: #f4b400;
+    border: none;
+    padding: 15px 30px;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #d29b00;
+}
+
+/* Course Style */
+#course_header{
+    background-image: url("../images//1\ 1.png");
+    background: linear-gradient(to right, rgba(239, 119, 14, 0.7), rgba(6, 79, 238, 0.5)), url('../images//1\ 3\ \(2\).png') no-repeat center center/cover; 
+}
+.course-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:  auto;
+    margin-top: 80px;
+    /* margin-bottom: 20px; */
+    justify-content: space-around;
+    width: 80%;
+}
+.course-heading h1{
+    font-family: "Open Sans" ,sans-serif;
+    font-size: 28px;
+}
+.course-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 20px;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+    /* width: 80%; */
+}
+
+.course {
+    /* padding: 20px; */
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    /* width: 150px; */
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+    color: #fff;
+    /* padding: 10px; */
+    border-radius: 10px;
+    font-size: 20px;
+    
+}
+.overlay-text h3{
+    margin-bottom: 0;
+}
+
+
+.course img {
+    display: block;
+    width: 100%;
+    height: auto; 
+    background-size: cover;
+}
+
+.course::before {
+    content: ""; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #EF7E1C; 
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
+}
+
+.course:hover::before {
+    opacity: 0.7; 
+}
+
+
+/* Ready Button  */
+#ready-btn{
+    display: block;
+    margin: 30px auto;
+    padding: 20px 60px;
+    border-radius: 30px;
+    color: black;
+    background-color: transparent;
+    border: 1px solid #002852;
+    font-size: 18px;
+}
+
+/* Online Section */
+.online{
+    background-image: url("../images/Rectangle\ 6.png");
+    width: 100%;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    /* height: max-content; */
+    padding-bottom: 2px;
+    margin-top: 80px;
+    background-size: cover; /* Makes the background image cover the entire element */
+    background-position: center; /* Centers the background image */
+}
+.online :nth-child(1){
+    color: white;
+    text-align: center;
+    padding: 90px 0 0px 0; 
+    font-size: 18px;
+    font-family: "Open Sans", sans-serif;
+}
+.online :nth-child(2){
+    color: white;
+    font-size: 52px;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+}
+.ready-btn{
+    display: inline-block;
+    display: flex;
+    margin: 30px auto;
+    padding: 20px 60px;
+    border-radius: 44px;
+    color: white;
+    background-color: transparent;
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    border: 1px solid white;
+    margin-bottom: 100px;
+    object-fit: contain;
+   
+}
+
+/* People Says */
+
+.testimonial-container{
+    width: 100%;
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+#people{
+    font-size: 28px;
+    font-family: "Open Sans",sans-serif;
+
+}
+blockquote{
+   
+    background: #F4F4FD;
+    position: relative;
+    width: 60%;
+    display: flex;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 200px 70px 45px 40px;
+    margin-top: 9%;
+
+}
+.person-img{
+    position: absolute;
+    width: 200px;
+    z-index: 1;
+    right: 20px;
+    top: -106px;
+}
+.rect1{
+    position: absolute;
+    left: -85px;
+    top: -70px;
+}
+.rect2{
+    position: absolute;
+    left: -85px;
+    top: 66px;
+    z-index: -1;
+}
+.person-name{
+    position: absolute;
+    color: white;
+    left: -50px;
+    top: -50px;
+    font-size: 36px;
+    font-family: "Nunito", sans-serif;
+}
+.person-rate{
+    position: absolute;
+    color: rgb(236, 202, 14);
+    left: 293px;
+    top: 25px;
+    font-size: 32px; 
+    /* width: 170px; */
+}
+.testimonial-container{
+    position: relative;
+    margin: 80px auto;
+}
+#prevBtn{
+    position: absolute;
+    left: 120px;
+    bottom: 100px;
+    padding: 20px;
+    border-radius: 30px;
+}
+#nextBtn{
+    position: absolute;
+    right: 120px;
+    bottom: 100px;
+    padding: 20px;
+    border-radius: 30px;
+}
+.person-para{
+    font-size: 20px;
+    font-family: "Open Sans", sans-serif;
+    width: 80%;
+}
+
+/* Test */
+.test {
+    margin-top: 10%;
+    /* margin-bottom: 10%; */
+    position: relative;
+    background-image: url("../images/Rectangle 35.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 628px; 
+}
+
+.test h2 {
+    font-size: 52px;
+    position: absolute;
+    text-align: center;
+    color: white; 
+    width: 80%;
+    font-family: "Open Sans", sans-serif; 
+}
+
+/* Newsletter */
+
+.newsletter {
+    text-align: center;
+    padding: 150px;
+    background-color: #F8F8F8;
+}
+
+.newsletter h2 {
+    margin-top: 60px;
+    font-size: 28px;
+    font-family: "Open Sans", sans-serif;
+}
+
+.newsletter p {
+    font-size: 18px;
+    margin-bottom: 70px;
+    font-family: "Open Sans", sans-serif;
+    color: #7E7E7E;
+}
+
+#newsletter-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: 0 auto; /* Center the entire #newsletter-btn div */
+}
+
+.newsletter input[type="text"] {
+    width: 60%; /* Input field takes 60% of the #newsletter-btn width */
+    padding: 20px;
+    color: black;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+input::placeholder {
+    font-size: 18px;
+    color: #7E7E7E;
+    font-family: "Open Sans", sans-serif;
+}
+
+.newsletter button {
+    width: 40%; /* Button takes 40% of the #newsletter-btn width */
+    padding: 17px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-family: "Open Sans", sans-serif;
+    cursor: pointer;
+    background-color: #002852;
+    color: #fff;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.newsletter button::after {
+    content: "\2192"; /* Unicode for right arrow */
+    margin-left: 10px;
+}
+
+  /* Footer */
+
+  .footer {
+    background-color: #002852;
+    color: white;
+    max-width: 100%;
+    width: 100%;
+    padding: 40px 0;
+    overflow: hidden;
+}
+
+.footer-container {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center; /* Center the items horizontally */
+    flex-wrap: wrap; /* Allow items to wrap if necessary */
+    /* max-width: 1200px; */
+    margin: auto; /* Center the container */
+    padding: 0 80px;
+}
+
+.footer-section {
+    flex: 1;
+    max-width: 100%;
+    /* min-width: 220px; */
+    /* margin: 0 20px; */
+    /* text-align: center; */
+}
+
+#logo-foot {
+    background-color: white;
+    border-radius: 15px;
+    margin-top: 20px;
+    /* margin-left: 20px; */
+}
+.footer-section .about{
+    width: 100%;
+    border: 1px solid black;
+}
+.footer-section h2 {
+    margin-bottom: 20px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.footer-section p {
+    font-size: 16px;
+    line-height: 1.6;
+    font-family: "Open Sans", sans-serif;
+    width: 75%;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 1.6;
+}
+.contact h2{
+    font-size: 22px;
+    font-family: "Open Sans",sans-serif;
+    margin-bottom: 33px;
+}
+.company h2{
+    font-size: 22px;
+    font-family: "Open Sans",sans-serif;
+    margin-bottom: 33px;
+}
+.programs h2{
+    font-size: 22px;
+    font-family: "Open Sans",sans-serif;
+    margin-bottom: 33px;
+}
+.contact p{
+    font-size: 18px;
+    font-family: "Open Sans",sans-serif;
+}
+.company li{
+    font-size: 18px;
+    font-family: "Open Sans",sans-serif;
+}
+.programs li{
+    font-size: 18px;
+    font-family: "Open Sans",sans-serif;
+}
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    font-size: 20px;
+    font-family: "Open Sans", sans-serif;
+}
+
+/* Course Page */
+
+/* Cards Container */
+.right {
+    text-align: right;
+    /* margin: 1em; */
+    display: flex;
+    
+    flex-wrap: wrap;
+    justify-content: flex-end;
+
+    width: 80%;
+    padding-right: 66px;
+    margin: 20px auto;
+}
+
+.card-container {
+    display: flex;
+    
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+    margin: 20px auto;
+    gap: 15px;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    width: 23%;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 15px;
+    text-align: left;
+}
+
+.card-title {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #000000;
+    font-family: "Open Sans", sans-serif;
+}
+
+.updated {
+    color: #7E7E7E;
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+}
+
+.card-rating {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    margin-top: 10px;
+}
+.rating-divider {
+    border: none; /* Removes the default border */
+    border-top: 1px solid #ccc; /* Customizes the line's appearance */
+    margin: 15px 0; /* Adjusts the spacing around the line */
+    width: 100%; /* Makes the line span the entire width of the parent */
+}
+.card-rating .star {
+    color: #f4b400;
+    margin-right: 5px;
+}
+.card-span{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    gap: 20px;
+}
+.card-span img{
+    height: 35px;
+    margin-right: 5px;
+}
+.card-span :nth-child(1){
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 18px;
+    font-family: "Open Sans", sans-serif;
+}
+.card-span :nth-child(2){
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 18px;
+    font-family: "Open Sans", sans-serif;
+}
+
+
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.course-details {
+    display: none;
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    /* border: 1px solid #ccc; */
+    border-radius: 8px;
+}
+
+.course-details.active {
+    display: block;
+}
+
+
+
+/* Coure detail */
+
+.back-button {
+    display: none; 
+    background-color: #FFCD17; 
+    color: white;
+    padding: 10px 20px; /* Padding around the button */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size */
+    margin: 20px 0; /* Margin around the button */
+    width: 150px; /* Set a fixed width */
+    margin-left: 28px;
+}
+
+/* Optional: Add a hover effect */
+.back-button:hover {
+    /* background-color: #45a049;  */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow on hover */
+}
+.course-container{
+    margin: 50px;
+}
+.course-header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.header1{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 65%;
+}
+.header11{
+    display: flex;
+    flex-direction: column;
+    
+}
+.header2{
+    display: flex;
+    width: 35%;
+}
+.header12{
+    margin-top: 2%;
+    width: 95%;
+}
+.profile-info{
+    display: flex;
+    flex-direction: row;
+    color: #7E7E7E;
+    /* margin-left: 2px; */
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Open Sans", sans-serif;
+}
+.profile-info h3, .profile-info p{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Open Sans", sans-serif;
+    margin-left: 20px;
+}
+.course-title h2{
+    font-size: 24px;
+    font-family: "Open Sans", sans-serif;
+}
+.rating{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    /* text-align: center; */
+    margin-bottom: 15px;
+}
+.rating button{
+    background-color: #FFCD17;
+    border: none;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-family: "Open Sans", sans-serif;
+
+}
+.rating2 i{
+    color: #f4b400;
+}
+.info {
+    display: flex;
+    gap: 10px;
+    align-items: center; /* Center items vertically */
+   
+}
+
+.info1, .info2 {
+    display: flex;
+    align-items: center; /* Align image and text vertically */
+    gap: 5px; 
+    text-align: left;
+}
+
+.info img {
+    width: 24px; /* Adjust the size of the image if needed */
+    height: 24px;
+}
+
+.info span {
+    font-size: 18px; /* Adjust font size */
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    color: #7E7E7E;
+}
+
+
+.header2{
+    display: flex;
+    flex-direction: column;
+}
+.header12 img{
+    width: 100%;
+}
+.sure{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid grey;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    
+}
+.sure :nth-child(1){
+    display: flex;
+    flex-direction: row;
+    
+}
+.sure :nth-child(1) p{
+    font-size: 20px;
+    font-family: "Open Sans",sans-serif;
+    column-rule: #000000;
+    align-items: center;
+    text-align: center;
+}
+.sure h2{
+    margin-left: 20px;
+    font-size: 24px;
+    font-size: 700;
+    font-family: "Open Sans", sans-serif;
+
+}
+.sure :nth-child(2){
+    display: flex;
+    flex-direction: row;
+   
+}
+.price-box{
+    border: 1px solid grey;
+    margin-top: 100px;
+    height: 100%;
+    border-radius: 10px;
+}
+.price{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+    gap: 20px;
+}
+.price p{
+    color: #7E7E7E;
+    font-size: 24px;
+    font-weight: 600;
+    font-family: "Open Sans", sans-serif;
+}
+.price h1{
+    font-size: 42px;
+
+}
+.enroll{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.enroll-btn{
+    background-color: #EF7E1C;
+    text-decoration: none;
+    padding: 20px 80px;
+    border-radius: 5px;
+    color: white;
+    font-size: 22px;
+    font-family: "Open Sans", sans-serif;
+}
+.enroll p{
+    font-size: 18px;
+    font-weight: 600;
+    font-family: "Open Sans", sans-serif;
+}
+.details{
+    display: flex;
+    flex-direction: column;
+    /* margin: auto;
+    justify-content: center; */
+    align-items: left;
+    margin-left: 25px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+.details p{
+    font-size: 18px;
+    font-weight: 600;
+    font-family: "Open Sans", sans-serif;
+}
+.course-content{
+    display: flex;
+    flex-direction: column;
+    width: 60.5%;
+    border: 1px solid grey;
+    padding: 20px 20px;
+    border-radius: 10px;
+    margin-top: 2%;
+}
+.course-content h3, .course-content h2{
+    font-size: 24px;
+    font-weight: 700;
+    font-family: "Open Sans", sans-serif;
+}
+.course-content h4{
+    font-size: 18px;
+    font-weight: 700;
+    font-family: "Open Sans", sans-serif;
+}
+.course-content p, .requirements li{
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Open Sans", sans-serif;
+    color: #6c6b6b;
+}
+.learn-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.learn1 img, .learn2 img{
+    margin-right: 10px;
+}
+.panel button{
+    font-size: 24px;
+    font-weight: 600;
+    font-family: "Open Sans", sans-serif;
+}
+
+.accordion {
+    background-color: #F6FBFF;
+    color: #444;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 16px;
+    transition: 0.4s;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    font-size: 24px;
+    font-weight: 600;
+    font-family: "Open Sans", sans-serif;
+}
+
+.accordion.active, .accordion:hover {
+    background-color: #F6FBFF;
+}
+
+.panel {
+    padding:  10px 0;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+    /* border: 1px solid #ccc; */
+    border-radius: 4px;
+    margin-bottom: 5px;
+}
+/* Contact */
+#contact_header{
+    background-image: url("../images//1\ 1.png");
+    background: linear-gradient(to right, rgba(239, 119, 14, 0.7), rgba(6, 79, 238, 0.5)), url('../images//1\ 3\ \(2\).png') no-repeat center center/cover; 
+}
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 0;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    /* max-width: 1200px; */
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.info-block {
+    text-align: center;
+    width: 30%;
+    max-width: 250px;
+}
+
+.info-block img {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+.info-block h3 {
+    margin: 10px 0;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: "Open Sans", sans-serif;
+}
+
+.info-block p {
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "Open Sans", sans-serif;
+}
+
+
+.contact-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    width: 100%;
+    align-items: stretch; /* Ensures both image and form take the same height */
+}
+
+.contact-image {
+    width: 50%;
+}
+
+.contact-image, 
+.contact-form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.contact-image img {
+    width: 100%;
+    height: 100%; /* Ensure the image takes up the full height */
+    object-fit: cover; /* Keeps the aspect ratio while covering the entire area */
+    border-radius: 10px;
+}
+
+.contact-form {
+    max-width: 100%;
+    justify-content: space-between; /* Adjusts the form fields properly */
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.contact-form h3 {
+    font-size: 24px;
+    /* margin-bottom: 20px; */
+    font-weight: 700;
+    font-family: "Open", sans-serif;
+    margin-block-end: 0;
+    margin-block-start: 0;
+}
+.contact-form p {
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-family: "Open", sans-serif;
+    color: #A8A8A8;
+    margin-block-end: 0;
+    margin-block-start: 0;
+}
+
+.contact-form label {
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "Open", sans-serif;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    width: 100%;
+    padding: 20px 0 20px 10px;
+}
+
+.contact-form textarea {
+    height: 150px;
+    resize: none;
+}
+
+.contact-form button {
+    /* width: fit-content; */
+    background-color: #ff8c00;
+    color: white;
+    padding: 12px 50px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #ff7000;
+}
+/* Login Page*/
+#login_header{
+    background-image: url("../images//1\ 1.png");
+    background: linear-gradient(to right, rgba(239, 119, 14, 0.7), rgba(6, 79, 238, 0.5)), url('../images//1\ 1.png') no-repeat center center/cover; 
+}
+.login{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 50%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8%;
+    align-items: stretch;
+}
+.login-form{
+    width: 100%;
+    margin-top: 10%;
+}
+.div1{
+    
+    display: flex;
+    flex-direction: column;
+
+}
+.login input[type="text"]{
+    max-width: 100%;
+    padding: 20px 0 20px 10px;
+}
+
+.div1 label, .div2 label{
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+}
+.div2{
+    
+    display: flex;
+    flex-direction: column;
+
+}
+input[type="password"]{
+    width: 100%;
+    padding: 20px 0 20px 10px;
+}
+.div3{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 20px;
+    margin-bottom: 5%;
+}
+input[type="submit"]{
+    border-radius: 5px;
+    padding: 10px 17px;
+    background-color: #EF7E1C;
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: "Open Sans", sans-serif;
+}
+.div3 a{
+    padding: 10px 17px;
+    text-decoration: none;
+    background-color: #000000;
+    color: white;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: "Open Sans", sans-serif;
+}
+
+/* Sign Up */
+/* .signup{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 50%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8%;
+    margin-bottom: 8%;
+    align-items: stretch;
+    gap: 5%;
+} */
+#register_header{
+    background-image: url("../images//1\ 1.png");
+    background: linear-gradient(to right, rgba(239, 119, 14, 0.7), rgba(6, 79, 238, 0.5)), url('../images//1\ 1.png') no-repeat center center/cover; 
+}
+#register-form{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 50%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8%;
+    margin-bottom: 8%;
+    align-items: stretch;
+    gap: 5%;
+    padding: 2%;
+}
+
+ .rdiv1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 8%;
+    margin-bottom: 2%;
+ }
+ 
+ .rdiv11{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+ }
+ .rdiv12{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    
+ }
+ .rdiv2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 8%;
+    margin-bottom: 2%;
+ }
+ .rdiv21{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+ }
+ .rdiv22{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+ }
+ .rdiv3{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    /* gap: 8%; */
+    width: 25%;
+    /* margin-right: 8%; */
+    margin-bottom: 2%;
+ }
+ select{
+    padding: 20px 0 20px 10px;
+    border: 1px solid #DBE0E9;
+    border-radius: 5px;
+ }
+ .roles{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "Open Sans", sans-serif;
+ }
+ .rdiv4{
+    margin-bottom: 2%;
+ }
+ .rdiv5{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    /* gap: 8%; */
+    width: 100%;
+    justify-content: space-between;
+
+ }
+ .rdiv51{
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    gap: 10px;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "Open Sans", sans-serif;
+    color: grey;
+    text-decoration: none;
+ }
+ .rdiv51 :nth-child(2){
+    text-decoration: none;
+    color: black;
+ }
+.rdiv52 input{
+    background-color: #000000;
+    /* color: #000000; */
+    color: white;
+    padding: 10px 20px;
+}
+
+#register-form label{
+    margin: 10px ;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "Open Sans", sans-serif;
+}
+#register-form input{
+    border: 1px solid #DBE0E9 !important;
+    border-radius: 5px !important;
+    font-size: 18px !important;
+    font-family: "Open Sans", sans-serif !important;
+}
+input[type="text"] {
+    width: 100%;
+    padding: 20px 0 20px 10px;
+}
+/* #register-form input[type="email"] {
+    border: 1px solid #DBE0E9 !important;
+    border-radius: 5px !important;
+    font-size: 18px !important;
+    font-family: "Open Sans", sans-serif !important;
+} */
+
+
+/* My Course */
+#mycourse_header{
+    background-image: url("../images//1\ 1.png");
+    background: linear-gradient(to right, rgba(239, 119, 14, 0.7), rgba(6, 79, 238, 0.5)), url('../images//1\ 1.png') no-repeat center center/cover; 
+}
+.right {
+    display: flex;
+    /* align-items: center; */
+    justify-content: flex-end;  
+    /* margin-right: 10%; */
+    margin-top: 5%;  
+}
+
+.right p {
+    font-size: 18px;
+    font-family: "Open Sans", sans-serif;
+    margin-right: 2%;
+    font-weight: 600;
+}
+
+.right a {
+    text-decoration: none;
+    color: white;
+    background-color: #002852;
+    padding: 20px 30px;
+    font-weight: 600;
+}
+
+/* Styling for the delete button */
+.course-delete-btn {
+    /* background-color: #e74c3c; */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.course-delete-btn:hover {
+    background-color: #ffffff;
+}
+
+/* Styling for the popup */
+.course-popup {
+    display: none; /* Hide the popup by default */
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 100px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /* Center text */
+}
+
+#popup-content {
+    display: block;
+}
+
+.popup-image {
+    width: 50px; /* Adjust size as needed */
+    height: 50px; /* Adjust size as needed */
+    background-color: orange;
+    border-radius: 50%; /* Make image circular */
+    margin-bottom: 10px; /* Spacing between image and message */
+}
+
+#popup-message {
+    font-size: 42px; /* Adjust text size as needed */
+    font-weight: 600;
+}
+#popup-image{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    padding: 25px;
+}
+
+
+
+.course-popup button:hover {
+    background-color: #c0392b;
+}
+
+.course-card-container {
+    width: 80%;
+    margin: auto;
+    margin-top: 4%;
+}
+
+.course-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 3%;
+    position: relative;
+}
+
+.course-date {
+    position: absolute;
+}
+
+#img1 {
+    width: 40%;
+    margin-right: 4%;
+    border-radius: 5px;
+}
+
+.course-card-content {
+    width: 60%;
+}
+
+.course-first-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.course-title-left h2 {
+    font-size: 24px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    margin-bottom: 0;
+    margin-top: 13%;
+}
+
+.course-title-left p {
+    margin-block-start: 10px;
+    margin-block-end: 0px;
+    font-size: 20px;
+    color: #F5C000;
+}
+
+.course-actions-right {
+    align-items: center;
+}
+
+.course-icon {
+    margin-top: 47%;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.course-delete-btn {
+    border: none;
+}
+
+#course-description {
+    text-transform: capitalize;
+    font-size: 18px;
+    font-family: "Open Sans", sans-serif;
+    color: #000000;
+}
+
+.course-enrollment-info, .course-lessons-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.course-enrollment-info img, .course-lessons-info img {
+    margin-right: 20px;
+}
+
+.course-enrollment-info p, .course-lessons-info p {
+    font-size: 18px;
+    font-family: "Open Sans", sans-serif;
+}
+
+/* Add Courses */
+#addcourse_header{
+    background-image: url("../images//1\ 1.png");
+    background: linear-gradient(to right, rgba(239, 119, 14, 0.7), rgba(6, 79, 238, 0.5)), url('../images//1\ 1.png') no-repeat center center/cover; 
+}
+.form-container {
+    width: 50%;
+    /* max-width: 800px; */
+    margin: 5% auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    /* gap: 10px; */
+}
+
+.tab {
+    flex: 1;
+    /* padding: 15px; */
+    width: 10%;
+    text-align: center;
+    background-color: #e7e7e7;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 8px 8px 0 0;
+}
+
+.tab.active {
+    background-color: #DBE0E9;
+    /* border-bottom: 3px solid #007bff; */
+    display: flex;
+    flex-direction: row;
+    width: 10%;
+}
+
+.photo-upload {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.photo-label {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+}
+
+.photo-label input[type="file"] {
+    display: none;
+}
+
+#photoPreview {
+    width: 30px;
+    /* height: 100px; */
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); */
+}
+
+
+.tab1{
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+    background-color: #DBE0E9;
+    /* gap: 10px; */
+    align-items: center;
+}
+.tab2{
+    width: 80%;
+    margin-left: 0;
+}
+
+#courseHeading{
+    padding: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    /* font-weight: bold; */
+}
+
+.form-group input{
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #DBE0E9;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #F8F8F8;
+}
+
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #DBE0E9;
+    background-color: #F8F8F8;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #DBE0E9;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+#courseTitle, #features, #lessonDescription{
+    padding: 70px 20px;
+}
+.form-container input::placeholder{
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "Open Sans", sans-serif;
+
+}
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.form-row .form-group {
+    flex: 1;
+}
+#submitt {
+    display: flex;
+    justify-content: flex-end;
+}
+label {
+    font-size: 20px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+}
+::placeholder {
+    font-size: 20px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+}
+.submit-btn {
+    background-color: #EF7E1C;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+}
+#form-group1{
+    display: flex;
+    flex-direction: row;
+}
+.form2{
+    margin-top: 50px;
+}
+
+
+
+.right{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;  
+    /* margin-right: 10%; */
+    margin-top: 5%;  
+}
+.right p{
+    font-size: 18px;
+    font-family: "Open Sans", sans-serif;
+    margin-right: 2%;
+    font-weight: 600;
+}
+.right a{
+    text-decoration: none;
+    color: white;
+    background-color: #002852;
+    padding: 20px 30px;
+    font-weight: 600;
+}
+
+
+
+/* Responsive Media Queries */
+
+
+@media (max-width: 1280px) {
+   
+    body {
+        font-size: 18px;
+    }
+    .auth-buttons{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .login-btn, .logout-btn {
+        padding: 5px 20px;
+        font-size: 16px;
+        margin-right: 5px;
+    }
+    .register-btn {
+        padding: 5px 10px;
+        font-size: 16px;
+        margin-top: 10px;
+    }
+    .overlay-text{
+        font-size: 16px;
+    }
+    .online :nth-child(2){
+        font-size: 48px;
+    }
+    .hero-section h1 {
+        font-size: 64px;
+    }
+    .hero-section p {
+        font-size: 24px;
+    }
+    .course-section {
+        width: 80%;
+        margin: 80px auto;
+    }
+    .course-list {
+        gap: 30px;
+    }
+    .course {
+        width: 30%;
+    }
+    
+    blockquote {
+        padding: 120px 40px 30px 30px; 
+        width: 80%; 
+        
+    }
+
+    .person-img {
+        width: 130px; 
+        top: -60px; 
+    }
+
+    .rect1 {
+        width: 40%;
+        left: -50px; 
+        top: -30px; 
+    }
+
+    .rect2 {
+        width: 15%;
+        left: -50px;
+        top: 30px; 
+    }
+
+    .person-name {
+        
+        left: -20px; 
+        top: -20px; 
+        font-size: 24px; 
+    }
+
+    .person-rate {
+        left: 180px; 
+        top: 10px; 
+        font-size: 20px; 
+    }
+
+    .person-para {
+        font-size: 16px;
+        width: 95%;
+    }
+
+    #prevBtn, #nextBtn {
+        padding: 10px; 
+        font-size: 14px; 
+    }
+
+    #prevBtn {
+        left: 20px; 
+        bottom: 20px; 
+    }
+
+    #nextBtn {
+        right: 20px;
+        bottom: 20px; 
+    }
+    #newsletter-btn {
+        width: 70%; /* Increase the width slightly for smaller screens */
+    }
+    .newsletter input[type="text"] {
+        width: 65%;
+    }
+    .newsletter button {
+        width: 35%;
+    }
+    .footer-container {
+        width: 100%;
+        margin:  auto;
+    }
+    /* ------------------- */
+    /* Course Page */
+    .card {
+        width: 30%; /* 3 cards per row */
+    }
+
+    .course-header {
+        flex-direction: row;
+    }
+    .back-button{
+        font-size: 14px;
+    }
+    .header1 {
+        width: 65%;
+    }
+
+    .header2 {
+        width: 35%;
+    }
+
+    .price-box {
+        margin-top: 50px;
+    }
+    /* Contact */
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-block {
+        width: 100%;
+        margin-bottom: 25px; /* Adjust margin for 1280px */
+    }
+
+    .contact-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-image, 
+    .contact-form {
+        width: 100%;
+    }
+    .contact-form label {
+        margin-bottom: 10px; /* Adjust the space between label and input */
+    }
+
+    .contact-form input, 
+    .contact-form textarea {
+        margin-top: 5px; /* Adjust top margin for inputs */
+    }
+    /* Sign Up */
+    .signup {
+        width: 80%;
+    }
+
+    .div1, .div2 {
+        gap: 20px; 
+    }
+
+    .div1 .div11, .div1 .div12, .div2 .div21, .div2 .div22 {
+        flex-basis: calc(50% - 20px); 
+    }
+    /* My Course */
+    .right {
+        margin-right: 10%;
+        margin-top: 5%;
+    }
+    
+    .right p {
+        font-size: 18px;
+    }
+
+    .right a {
+        padding: 20px 30px;
+    }
+    
+    .course-card-container {
+        width: 80%;
+    }
+
+    .course-card {
+        flex-direction: row;
+    }
+
+    .course-date {
+        position: absolute;
+    }
+
+    #img1 {
+        width: 40%;
+    }
+
+    .course-card-content {
+        width: 60%;
+    }
+
+    .course-title-left h2 {
+        font-size: 24px;
+    }
+
+    .course-title-left p {
+        font-size: 20px;
+    }
+
+    .course-icon {
+        margin-top: 47%;
+    }
+
+    #course-description {
+        font-size: 18px;
+    }
+
+    .course-enrollment-info p, .course-lessons-info p {
+        font-size: 18px;
+    }
+    /* Add Course */
+    .tabs {
+        flex-direction: column;
+    }
+
+    .tab {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .tab1, .tab2 {
+        width: 100%;
+    }
+}
+@media (max-width: 1024px) {
+    .navbar-container {
+        /* flex-direction: column; */
+        align-items: center;
+    }
+    .nav-links {
+        /* flex-direction: column; */
+        align-items: center;
+        gap: 20px;
+    }
+    .logo, .auth-buttons{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .hero-section h1 {
+        font-size: 36px;
+    }
+    .test{
+        height: 580px;
+    }
+    .test h2{
+        font-size: 48px;
+    }
+    
+    #newsletter-btn {
+        width: 100%; /* Full width on this screen size */
+        flex-direction: column;
+    }
+    .newsletter input[type="text"] {
+        width: 70%;
+        margin-bottom: 30px;
+    }
+    .newsletter button {
+        width: 50%;
+    }
+    /* ------------------ */
+    /* Course Page */
+    .card {
+        width: 45%; /* 2 cards per row */
+    }
+
+    .course-header {
+        flex-direction: column;
+        width: 100%;  
+    }
+
+    .header1 {
+        display: block;
+        margin: auto;
+        width: 80%;
+        margin-bottom: 5%;
+    }
+    .header12{
+        width: 100%;
+    }
+    .header2 {
+        display: block;
+        margin: auto;
+        width: 80%;
+    }
+    .course-content {
+        width: 80%;
+        display: block;
+        margin: auto;
+        margin-top: 5%;
+    }
+
+    .price-box {
+        margin-top: 70px;
+    }
+    /* Contact */
+    
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-block {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .back-button{
+        max-width: 80%;
+        display: flex;
+        /* margin: auto; */
+        /* align-items: flex-start; */
+        justify-content: flex-end;
+    }
+    .contact-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-image, 
+    .contact-form {
+        width: 100%;
+    }
+    .contact-form label {
+        margin-bottom: 8px; /* Adjust the space between label and input */
+    }
+
+    .contact-form input, 
+    .contact-form textarea {
+        margin-top: 5px;
+    }
+    /* Sign up */
+    .signup {
+        width: 90%; 
+    }
+
+    .rdiv1, .rdiv2 {
+        gap: 15px; 
+    }
+
+    .rdiv1 .rdiv11, .rdiv1 .rdiv12, .rdiv2 .rdiv21, .rdiv2 .rdiv22 {
+        /* flex-basis: calc(50% - 15px);  */
+        flex-direction: column;
+        width: 100%;
+
+    }
+    .rdiv1, .rdiv2, .rdiv4, .rdiv5{
+        flex-direction: column;
+        width: 100%;
+    }
+    .rdiv3{
+        width: 100%;
+    }.rdiv52{
+        margin-top: 2%;
+    }
+    .rdiv52 input {
+        background-color: #000000;
+        /* color: #000000; */
+        color: white;
+        padding: 7px 15px;
+    }
+    /* My Course */
+    .right {
+        margin-right: 8%;
+        margin-top: 4%;
+    }
+    
+    .right p {
+        font-size: 16px;
+    }
+
+    .right a {
+        padding: 15px 25px;
+    }
+
+    .course-card-container {
+        width: 85%;
+    }
+
+    .course-card {
+        flex-direction: row;
+    }
+
+    #img1 {
+        width: 45%;
+    }
+
+    .course-card-content {
+        width: 55%;
+    }
+
+    .course-title-left h2 {
+        font-size: 22px;
+    }
+
+    .course-title-left p {
+        font-size: 18px;
+    }
+
+    .course-icon {
+        margin-top: 45%;
+    }
+
+    #course-description {
+        font-size: 16px;
+    }
+
+    .course-enrollment-info p, .course-lessons-info p {
+        font-size: 16px;
+    }
+    /* Add Course */
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+        font-size: 16px; 
+    }
+
+    .submit-btn {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+}
+@media (max-width: 800px) {
+    
+    .footer-container {
+        padding: 0 20px;
+        width: 100%;
+    }
+
+    .footer-section p {
+        width: 100%; 
+    }
+
+    
+    .footer-section {
+        margin: 0 10px;
+        text-align: center;
+    }
+}
+@media (max-width: 768px) {
+    .logo img {
+        margin-left: 0;
+        width: 80%;
+    }
+    .auth-buttons {
+        width: 30%;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+
+    .login-btn, .register-btn, .logout-btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .course-list {
+        flex-direction: column;
+    }
+    .course {
+        width: 100%;
+    }
+    .hero-section h1 {
+        font-size: 32px;
+    }
+    .hero-section p {
+        font-size: 16px;
+    }
+    .logout-btn, .login-btn, .register-btn{
+        font-size: 14px;
+        
+    }
+    .online :nth-child(2) {
+        font-size: 36px;
+    }
+    .person-rate {
+        left: 45%;
+        margin: auto;
+        top: 10px;
+        font-size: 20px;
+    }
+    .rect1 {
+        width: 40%;
+        left: 0px;
+        top: -30px;
+    }
+    .rect2 {
+        width: 15%;
+        left: 0px;
+        top: 30px;
+    }
+    .person-name {
+        left: 20px;
+        top: -20px;
+        font-size: 24px;
+    }
+    .test{
+        height: 530px;
+    }
+    .test h2{
+        font-size: 46px;
+    }
+    .newsletter{
+        padding: 100px;
+    }
+    #newsletter-btn {
+        flex-direction: column; /* Stack input and button on top of each other */
+        width: 100%;
+    }
+    .newsletter input[type="text"] {
+        width: 100%;
+        margin-bottom: 10px; /* Add some space between input and button */
+    }
+    .newsletter button {
+        width: 80%;
+    }
+    .about{
+        padding-right:100px;
+        padding-left:100px;
+    }
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .navbar-container{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background-color: #002852;
+        z-index: 1;
+        padding: 20px 0;
+    }
+    
+
+    .nav-links li {
+        margin-bottom: 20px;
+    }
+
+    
+
+    .hamburger {
+        display: block;
+        /* height: 300px; */
+    }
+
+    .nav-active .nav-links, .auth-buttons {
+        display: flex;
+        
+    }
+    /* ------------ */
+    /* Course Page */
+    .card {
+        width: 90%; /* 1 card per row */
+    }
+
+    .course-header {
+        flex-direction: column;
+    }
+
+    .header1, .header2, .course-content {
+        width: 100%;
+    }
+
+    .profile-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .price-box {
+        margin-top: 20px;
+    }
+    .learn-div{
+        flex-direction: column;
+    }
+    /* Contact  */
+    .contact-section {
+        width: 100%;
+        padding: 40px 0; /* Adjust padding for 768px */
+        display: block;
+        margin: auto;
+        
+        max-width: 80%;
+    }
+
+    .contact-form h3 {
+        font-size: 22px; /* Adjust font-size for headings */
+        margin-bottom: 20px;
+    }
+
+    .contact-form label, 
+    .contact-form input, 
+    .contact-form textarea {
+        font-size: 14px; /* Adjust font size for 768px */
+    }
+
+    .contact-form button {
+        font-size: 16px;
+        padding: 12px;
+    }
+    .contact-form label {
+        margin-bottom: 8px;
+    }
+    .course-content{
+        max-width: 80%;
+    }
+    .contact-form input, 
+    .contact-form textarea {
+        margin-top: 4px;
+       
+    }
+    .course-container{
+        margin: auto;
+    }
+    /* Sign up */
+    .signup {
+        width: 95%;
+    }
+
+    .div1, .div2 {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .div1 .div11, .div1 .div12, .div2 .div21, .div2 .div22 {
+        flex-basis: 100%; /* Full width on smaller screens */
+    }
+
+    .div5 {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .div51 {
+        font-size: 14px;
+    }
+
+    .div52 input {
+        padding: 10px;
+        font-size: 14px;
+    }
+    /* My Course */
+    .right {
+        margin-right: 5%;
+        margin-top: 3%;
+    }
+    
+    .right p {
+        font-size: 14px;
+    }
+
+    .right a {
+        padding: 10px 20px;
+    }
+
+    .course-card-container {
+        width: 90%;
+    }
+
+    .course-card {
+        flex-direction: column;
+    }
+
+    #img1 {
+        width: 50%;
+    }
+
+    .course-card-content {
+        width: 100%;
+    }
+
+    .course-title-left h2 {
+        font-size: 20px;
+    }
+
+    .course-title-left p {
+        font-size: 16px;
+    }
+
+    .course-icon {
+        margin-top: 40%;
+    }
+
+    #course-description {
+        font-size: 14px;
+    }
+
+    .course-enrollment-info p, .course-lessons-info p {
+        font-size: 14px;
+    }
+    /* Add Course */
+    .form-container{
+        width: 80%;
+    }
+    .form-row {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .form-group {
+        width: 100%;
+    }
+
+    .tab {
+        font-size: 14px;
+    }
+
+    .photo-upload {
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .auth-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .course-section {
+        width: 100%;
+    }
+    .hero-section h1 {
+        font-size: 28px;
+    }
+    .hero-section p {
+        font-size: 14px;
+    }
+    .test{
+        height: 470px;
+    }
+    .test h2{
+        font-size: 32px;
+    }
+    .person-rate {
+        left: 45%;
+        margin: auto;
+        top: 10px;
+        font-size: 20px;
+    }
+    .rect1 {
+        width: 40%;
+        left: 0px;
+        top: -4px;
+    }
+    .rect2 {
+        width: 15%;
+        left: 0px;
+        top: 30px;
+    }
+    .person-name {
+        left: 20px;
+        top: -19px;
+        font-size: 24px;
+    }
+    .person-img {
+        width: 88px;
+        top: -23px;
+    }
+    .newsletter{
+        padding: 60px;
+    }
+    /* ------------- */
+    /* COurse Page */
+    .card {
+        width: 100%; /* Full-width card */
+    }
+
+    .course-header {
+        flex-direction: column;
+    }
+
+    .header1, .header2 {
+        width: 100%;
+    }
+
+    .profile-info {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .details {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .enroll-btn {
+        padding: 15px 30px;
+        font-size: 18px;
+    }
+
+    .price-box {
+        margin-top: 20px;
+    }
+
+    .course-content {
+        width: 100%;
+    }
+    .learn-div{
+        flex-direction: column;
+    }
+    /* Contact */
+    .contact-section {
+        width: 100%;
+    }
+
+    .info-block {
+        width: 100%;
+    }
+    .contact-form{
+        max-width: 90%;
+        overflow: hidden;
+        display: block;
+        margin: auto;
+    }
+
+    .contact-form h3 {
+        font-size: 18px; /* Adjust font-size for very small screens */
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 12px;
+    }
+
+    .contact-form button {
+        font-size: 14px;
+        padding: 8px;
+    }
+    .contact-form label {
+        margin-bottom: 6px;
+    }
+
+    .contact-form input, 
+    .contact-form textarea {
+        margin-top: 4px;
+    }
+    /* Sign up */
+    .div3 {
+        font-size: 14px;
+    }
+
+    #register-form label {
+        font-size: 14px;
+    }
+
+    #register-form input {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .div51 {
+        font-size: 12px;
+    }
+
+    .div52 input {
+        padding: 8px;
+        font-size: 12px;
+    }
+    /* My Course */
+    .right {
+        margin-right: 3%;
+        margin-top: 2%;
+    }
+    
+    .right p {
+        font-size: 12px;
+    }
+
+    .right a {
+        padding: 8px 15px;
+    }
+
+    .course-card-container {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .course-card {
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+        width: 90%;
+    }
+
+    #img1 {
+        width: 100%;
+    }
+
+    .course-card-content {
+        width: 100%;
+    }
+
+    .course-title-left h2 {
+        font-size: 18px;
+    }
+
+    .course-title-left p {
+        font-size: 14px;
+    }
+
+    .course-icon {
+        margin-top: 35%;
+    }
+
+    #course-description {
+        font-size: 12px;
+    }
+
+    .course-enrollment-info p, .course-lessons-info p {
+        font-size: 12px;
+    }
+    /* Add Course */
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+        font-size: 12px;
+    }
+
+    .submit-btn {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+
+    #photoPreview {
+        width: 50px;
+        height: 50px;
+    }
+}

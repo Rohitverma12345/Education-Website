@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Course</title>
+    <link rel="stylesheet" href="../Css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="container-full">
+        <header id="addcourse_header">
+            <nav class="navbar">
+                
+                <div class="navbar-container">
+                    <a href="#" class="logo">
+                        <img src="../images/logo 1.png" alt="Logo">
+                    </a>
+                    <ul class="nav-links">
+                        <li><a href="../Html/home.html" class="active">Home</a></li>
+                        <li><a href="../Html/course.html">Courses</a></li>
+                        <li id="my-courses-link"><a href="../Html/mycourse.html">My Courses</a></li>
+                        <li id="add-courses-link"><a href="../Html/addcourse.html">Add Courses</a></li>
+                        <li><a href="../Html/contact.html">Contact</a></li>
+                    </ul>
+                    <div class="auth-buttons">
+                        
+                           
+                            <button id="auth-button" onclick="redirectToLogin()"  class="login-btn">  <i class="fas fa-sign-in-alt icon-space" aria-hidden="true"></i>Login</button>
+                        
+                        
+                        <button onclick="registerUser()" class="register-btn"><i class="fas fa-users icon-space"></i>Register</button>
+                    </div>
+                     <!-- Hamburger Icon -->
+                     <div class="hamburger">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </div>
+            </nav>
+            <div class="hero-section">
+                <h1>Add Course</h1>
+                <p>Home / Add Courses</p>
+                
+            </div>
+            
+        </header>
+
+        
+        
+        <!-- Form  -->
+        <div class="form-container">
+            <div class="tabs">
+                
+                    <div class="tab1">
+                        <div>
+                            <label for="coursePhoto" id="courseImage" class="photo-label">
+                                <img id="photoPreview" src="../images/akar-icons_file.png" alt="Upload Photo" />
+                                <input type="file" id="coursePhoto" name="coursePhoto" accept="image/*" onchange="previewPhoto(event)">
+                                
+                            </label>
+                        </div>
+                        <div>
+                            <p>Course</p>
+                        </div>
+                       
+                    </div>
+                    
+                   
+                    <div class="tab2">
+                       
+                         <div class="form-group grp">
+                            <input type="text" id="courseHeading" name="courseTitle" placeholder="Enter Course Name" required>
+                         </div>
+                        
+                    </div>
+                
+               
+               
+            </div>
+        
+            
+            <form id="addCourseForm">
+                <div class="form-group">
+                    <label for="courseTitle">Course Overview</label>
+                    <input type="text" id="courseTitle" name="courseTitle" placeholder="Enter Here" required>
+                </div>
+        
+                <div class="form-group">
+                    <label for="features">Features</label>
+                    <textarea id="features" name="features" placeholder="Type Here" required></textarea>
+                </div>
+        
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="coursePrice">Courses Price</label>
+                        <input type="number" id="coursePrice" name="coursePrice" placeholder="Enter Price" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="courseTags">Choose Tags</label>
+                        <select id="courseTags" name="courseTags" required>
+                            <option value="top-seller">Top Seller</option>
+                            <option value="new-release">New Release</option>
+                            
+                        </select>
+                    </div>
+                </div>
+        
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="studentEnroll">Student Enroll</label>
+                        <input type="number" id="studentEnroll" name="studentEnroll" placeholder="Enter Number" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="courseRating">Add Rating</label>
+                        <input type="number" id="courseRating" name="courseRating" placeholder="Enter Number" min="1" max="5" required>
+                    </div>
+                </div>
+        
+                <div >
+                    <form>
+                        <div class="form-group">
+                            <label for="lessonName">Lesson Name</label>
+                            <input type="text" id="lessonName" name="lessonName" placeholder="Enter Lesson Name" required>
+                        </div>
+                
+                        <div class="form-group">
+                            <label for="lessonDescription">Description Of The Lesson</label>
+                            <textarea id="lessonDescription" name="lessonDescription" placeholder="Type Here" required></textarea>
+                        </div>
+                        <div id="submitt">
+                            <button type="submit" class="submit-btn">Create</button>
+                        </div> 
+                    </form>
+                   
+                     
+                </div>
+            </form>
+           
+        </div>
+        
+        <!-- <div class="form-container form2">
+            <form>
+                <div class="form-group">
+                    <label for="lessonName">Lesson Name</label>
+                    <input type="text" id="lessonName" name="lessonName" placeholder="Enter Lesson Name" required>
+                </div>
+        
+                <div class="form-group">
+                    <label for="lessonDescription">Description Of The Lesson</label>
+                    <textarea id="lessonDescription" name="lessonDescription" placeholder="Type Here" required></textarea>
+                </div>
+                <div id="submitt">
+                    <button type="submit" class="submit-btn">Create</button>
+                </div> 
+            </form>
+           
+             
+        </div> -->
+
+
+
+
+        <!-- Newsletter -->
+        <div class="newsletter">
+            <h2>Get Newsletter</h2>
+            <p>Your Download Should Start Automatically, If Not Click Here. Should I Give Up, Huh?</p>
+            <div id="newsletter-btn">
+                <input type="text" placeholder="Email" name="email">
+                <button type="submit">Get It Now   </button>
+            </div>
+            
+          </div>
+
+
+
+          <!-- Footer -->
+          <div class="footer">
+            <div class="footer-container">
+                <div class="footer-section about">
+                    <img  id="logo-foot" src="../images/logo 3.png">
+                    <p>
+                        Discover a world of knowledge at our esteemed education institute. 
+                        We foster academic excellence, creativity, and personal growth. Our innovative programs ensure 
+                        a transformative learning experience, preparing students for a successful future.
+                    </p>
+                </div>
+                <div class="footer-section contact">
+                    <h2>Contact</h2>
+                    <p>329 Queensberry Street, North Melbourne,<br> VIC 3051, Australia.</p>
+                    <p>123 456 7890</p>
+                    <p>Support@Edumy.Com</p>
+                </div>
+                <div class="footer-section company">
+                    <h2>Company</h2>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Become a Teacher</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section programs">
+                    <h2>Programs</h2>
+                    <ul>
+                        <li><a href="#">Nanodegree Plus</a></li>
+                        <li><a href="#">Veterans</a></li>
+                        <li><a href="#">Georgia</a></li>
+                        <li><a href="#">Self-Driving Car</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Copyright © 2023 Education Theme. All Rights Reserved</p>
+            </div>
+        </div>
+    </div>
+    <!-- <script src="../Js/addcourse.js"></script> -->
+    <script src="../Js/common.js"></script>
+</body>
+</html>

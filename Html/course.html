@@ -1,0 +1,1604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- open sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <!-- Nunito -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <title>Course</title>
+    <link rel="stylesheet" href="../Css/main.css">
+</head>
+<body>
+    <div class="container-full">
+        <header id="course_header">
+            <nav class="navbar">
+                
+                <div class="navbar-container">
+                    <a href="#" class="logo">
+                        <img src="../images/logo 1.png" alt="Logo">
+                    </a>
+                    <ul class="nav-links">
+                        <li><a href="../Html/home.html" class="active">Home</a></li>
+                        <li><a href="../Html/course.html">Courses</a></li>
+                        <li id="my-courses-link"><a href="../Html/mycourse.html">My Courses</a></li>
+                        <li id="add-courses-link"><a href="../Html/addcourse.html">Add Courses</a></li>
+                        <li><a href="../Html/contact.html">Contact</a></li>
+                    </ul>
+                    <div class="auth-buttons">
+                        
+                           
+                            <button id="auth-button" onclick="redirectToLogin()"  class="login-btn">  <i class="fas fa-sign-in-alt icon-space" aria-hidden="true"></i>Login</button>
+                        
+                        
+                        <button onclick="registerUser()" class="register-btn"><i class="fas fa-users icon-space"></i>Register</button>
+                    </div>
+                     <!-- Hamburger Icon -->
+                     <div class="hamburger">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </div>
+            </nav>
+            <div class="hero-section">
+                <h1>School Categories Courses</h1>
+                <p>Home / Courses / Design</p>
+                <!-- <button class="ready-btn">Ready To Get Started?</button> -->
+            </div>
+            <!-- <img src="../images/Ellipse 3.png"> -->
+        </header>
+
+        <div class="right">
+            <p>52 Courses</p>
+        </div>
+
+        <div class="card-container">
+            <div class="card" onclick="openCourseDetails('course1')">
+                <img src="../images/t8 1.png" alt="Fashion Photography">
+                <div class="card-content">
+                    <p class="updated">Updated 21/12/2019</p>
+                    <h2 class="card-title">Fashion Photography From Professional</h2>
+                    
+                    <div class="card-rating">
+                        <span class="star">★★★★★</span>
+                        <hr class="rating-divider">
+                        <div class="card-span">
+                            <div class="count"><img src="../images/bxs_user.png">2</div>
+                            <div class="reviews"><img src="../images/ic_outline-comment.png">5</div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="card" onclick="openCourseDetails('course2')">
+                <img src="../images/t8 2.png" alt="Fashion Photography">
+                <div class="card-content">
+                    <p class="updated">Updated 21/12/2019</p>
+                    <h2 class="card-title">Adobe XD: Prototyping Tips and Tricks</h2>
+                    
+                    <div class="card-rating">
+                        <span class="star">★★★★★</span>
+                        <hr class="rating-divider">
+                        <div class="card-span">
+                            <div class="count"><img src="../images/bxs_user.png">2</div>
+                            <div class="reviews"><img src="../images/ic_outline-comment.png">5</div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="card" onclick="openCourseDetails('course3')">
+                <img src="../images/t8 3.png" alt="Fashion Photography">
+                <div class="card-content">
+                    <p class="updated">Updated 21/12/2019</p>
+                    <h2 class="card-title">Introduction Web Design & HTML</h2>
+                    
+                    <div class="card-rating">
+                        <span class="star">★★★★★</span>
+                        <hr class="rating-divider">
+                        <div class="card-span">
+                            <div class="count"><img src="../images/bxs_user.png">2</div>
+                            <div class="reviews"><img src="../images/ic_outline-comment.png">5</div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="card" onclick="openCourseDetails('course4')">
+                <img src="../images/t8 4.png" alt="Fashion Photography">
+                <div class="card-content">
+                    <p class="updated">Updated 21/12/2019</p>
+                    <h2 class="card-title">Sketch: Creating Responsive SVG</h2>
+                    
+                    <div class="card-rating">
+                        <span class="star">★★★★★</span>
+                        <hr class="rating-divider">
+                        <div class="card-span">
+                            <div class="count"><img src="../images/bxs_user.png">2</div>
+                            <div class="reviews"><img src="../images/ic_outline-comment.png">5</div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="card" onclick="openCourseDetails('course5')">
+                <img src="../images/t8 5.png" alt="Fashion Photography">
+                <div class="card-content">
+                    <p class="updated">Updated 21/12/2019</p>
+                    <h2 class="card-title">How to Make Beautiful Landscape Photos?</h2>
+                    
+                    <div class="card-rating">
+                        <span class="star">★★★★★</span>
+                        <hr class="rating-divider">
+                        <div class="card-span">
+                            <div class="count"><img src="../images/bxs_user.png">2</div>
+                            <div class="reviews"><img src="../images/ic_outline-comment.png">5</div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="card" onclick="openCourseDetails('course6')">
+                <img src="../images/t8 6.png" alt="Fashion Photography">
+                <div class="card-content">
+                    <p class="updated">Updated 21/12/2019</p>
+                    <h2 class="card-title">Design Instruments for Communication</h2>
+                    
+                    <div class="card-rating">
+                        <span class="star">★★★★★</span>
+                        <hr class="rating-divider">
+                        <div class="card-span">
+                            <div class="count"><img src="../images/bxs_user.png">2</div>
+                            <div class="reviews"><img src="../images/ic_outline-comment.png">5</div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="card" onclick="openCourseDetails('course7')">
+                <img src="../images/t8 7.png" alt="Fashion Photography">
+                <div class="card-content">
+                    <p class="updated">Updated 21/12/2019</p>
+                    <h2 class="card-title">Fashion Photography From Professional</h2>
+                    
+                    <div class="card-rating">
+                        <span class="star">★★★★★</span>
+                        <hr class="rating-divider">
+                        <div class="card-span">
+                            <div class="count"><img src="../images/bxs_user.png">2</div>
+                            <div class="reviews"><img src="../images/ic_outline-comment.png">5</div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="card" onclick="openCourseDetails('course8')">
+                <img src="../images/t8 8.png" alt="Fashion Photography">
+                <div class="card-content">
+                    <p class="updated">Updated 21/12/2019</p>
+                    <h2 class="card-title">How to be a DJ? Make Electronic Music</h2>
+                    
+                    <div class="card-rating">
+                        <span class="star">★★★★★</span>
+                        <hr class="rating-divider">
+                        <div class="card-span">
+                            <div class="count"><img src="../images/bxs_user.png">2</div>
+                            <div class="reviews"><img src="../images/ic_outline-comment.png">5</div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <!-- Repeat similar cards for other courses -->
+        </div>
+
+        <div class="course-container">
+            <!-- <button onclick="closeCourseDetails()">Back to Courses</button> -->
+            <div id="course1" class="course-details">
+                
+                <div class="main-content">
+                    <div class="course-header">
+                        <div class="header1">
+                            <div class="header11">
+                                <div class="profile-pic">
+                            
+                                    <div class="profile-info">
+                                        <img src="..//images/Mask group.png" alt="Profile Picture">
+                                        <h3>Joban Tufan</h3>
+                                        <p>Last Updated 21 December 2019</p>
+                                    </div>
+                                </div>
+                                <div class="course-title">
+                                    <h2>Fashion Photography From Professional</h2>
+                                </div>
+                                <div class="course-detail">
+                                    <div class="rating">
+                                        <div class="rating1">
+                                            <button>Top Seller</button>
+                                        </div>
+                                        
+                                        <div class="rating2">
+                                            <i>&#9733;</i>
+                                            <i>&#9733;</i>
+                                            <i>&#9733;</i>
+                                            <i>&#9733;</i>
+                                            <i>&#9733;</i>
+                                        </div>
+                                    </div>
+                                    <div  class="info">
+                                        <div class="info1">
+                                            <img src="../images/bxs_user.png">
+                                            <span>2 Students Enrolled</span>
+                                        
+                                        </div>
+                                        <div class="info2">
+                                            <img src="../images/akar-icons_file.png">
+                                            <span>5 Topics</span>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                           
+                            <div class="header12">
+                                <img src="../images/t8 1.png">
+                            </div>
+                        </div>
+                        <div class="header2">
+                            <div class="sure">
+                                    <div>
+                                        <img src="../images/2 2.png">
+                                        <h2>Not Sure ?</h2>
+                                    </div>
+                                    <div>
+                                        <p>Every course comes with a 30-day<br> money-back guarantee</p>
+                                    </div>
+                            </div>
+                            <div class="price-box">
+                                <div class="price">
+                                    <p>Price</p>
+                                    <h1> $49.99</h1>
+                                   
+                                </div>
+                                <div class="enroll">
+                                    <a href="#" class="enroll-btn">Enrol Now</a>
+                                    <p>Paid Course Entry</p>
+                                </div>
+                                
+                                <div class="details">
+                                    
+                                        <p>1 Hr Demo Video</p>
+                                        <p>69 Download Resources</p>
+                                        <p>Full Lifetime Access</p>
+                                        <p>Access On Mobile And TV</p>
+                                        <p>Assignments</p>
+                                        <p>Certificate Of Completion</p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   
+
+                    <div class="course-content">
+                        <div class="course-overview">
+                            <h3>Course Overview</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas faucibus mollis interdum. Nulla vitae elit libero, a pharetra augue. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec ullamcorper nulla non metus auctor fringilla. Donec sed odio dui. Aenean lacinia bibendum nulla sed consectetur.</p>
+                        </div>
+                        <div class="what-you-learn">
+                            <h4>What You'll Learn</h4>
+                            <div class="learn-div">
+                                <div class="learn1">
+                                    <p> <img src="../images/check-solid(3) 6.png">Become a UX designer.</p>
+                                    <p><img src="../images/check-solid(3) 6.png">You will be able to add UX designer to your CV</li>
+                                    <p><img src="../images/check-solid(3) 6.png">Become a UI designer.</li>
+                                    <p><img src="../images/check-solid(3) 6.png">Build & test a full website design.</li>
+                                    <p><img src="../images/check-solid(3) 6.png">Build & test a full mobile app.</li>
+                                </div>
+                                <div class="learn2">
+                                    <p><img src="../images/check-solid(3) 6.png">Learn to design websites & mobile phone apps.</p>
+                                    <p><img src="../images/check-solid(3) 6.png">You'll learn how to choose colors.</p>
+                                    <p><img src="../images/check-solid(3) 6.png">Prototype your designs with interactions.</p>
+                                    <p><img src="../images/check-solid(3) 6.png">Export production ready assets.</p>
+                                    <p><img src="../images/check-solid(3) 6.png">All the techniques used by UX professionals</p>
+                                </div>
+                            </div>
+                           
+                        </div>
+                        <div class="requirements">
+                            <h3>Requirements</h3>
+                            <ul>
+                                <li>You will need a copy of Adobe XD 2019 or above. A free trial can be downloaded from Adobe.</li>
+                                <li>No previous design experience is needed.</li>
+                                <li>No previous Adobe XD skills are needed.</li>
+                               
+                            </ul>
+                        </div>
+                    </div>
+                    
+
+                    <div class="course-content">
+                        <h2>Course Content</h2>
+                    
+                        <div class="section">
+                            <!-- <div> -->
+                                <button class="accordion">General</button>
+                                <!-- <img src="../images/chevron-down-solid(1) 3.png"> -->
+                            <!-- </div> -->
+                            
+                            <div class="panel">
+                                <button class="accordion">Lesson 1</button>
+                                <div class="panel">
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,  including versions of Lorem Ipsum.</p>
+                                </div>
+                                <button class="accordion">Lesson 2</button>
+                                <div class="panel">
+                                    <p>Content for Lesson 2.</p>
+                                </div>
+                                <button class="accordion">Lesson 3</button>
+                                <div class="panel">
+                                    <p>Content for Lesson 3.</p>
+                                </div>
+                                <button class="accordion">Lesson 4</button>
+                                <div class="panel">
+                                    <p>Content for Lesson 4.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+
+
+                   
+                </div>
+            </div>
+            <div id="course2" class="course-details">
+                
+                <div class="main-content">
+                    <div class="course-header">
+                        <div class="header1">
+                            <div class="header11">
+                                <div class="profile-pic">
+                            
+                                    <div class="profile-info">
+                                        <img src="..//images/Mask group.png" alt="Profile Picture">
+                                        <h3>Joban Tufan</h3>
+                                        <p>Last Updated 21 December 2019</p>
+                                    </div>
+                                </div>
+                                <div class="course-title">
+                                    <h2>Adobe XD: Prototyping Tips and Tricks</h2>
+                                </div>
+                                <div class="course-detail">
+                                    <div class="rating">
+                                        <div class="rating1">
+                                            <button>Top Seller</button>
+                                        </div>
+                                        
+                                        <div class="rating2">
+                                            <i>&#9733;</i>
+                                            <i>&#9733;</i>
+                                            <i>&#9733;</i>
+                                            <i>&#9733;</i>
+                                            <i>&#9733;</i>
+                                        </div>
+                                    </div>
+                                    <div  class="info">
+                                        <div class="info1">
+                                            <img src="../images/bxs_user.png">
+                                            <span>2 Students Enrolled</span>
+                                        
+                                        </div>
+                                        <div class="info2">
+                                            <img src="../images/akar-icons_file.png">
+                                            <span>5 Topics</span>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                           
+                            <div class="header12">
+                                <img src="../images/t8 2.png">
+                            </div>
+                        </div>
+                        <div class="header2">
+                            <div class="sure">
+                                    <div>
+                                        <img src="../images/2 2.png">
+                                        <h2>Not Sure ?</h2>
+                                    </div>
+                                    <div>
+                                        <p>Every course comes with a 30-day<br> money-back guarantee</p>
+                                    </div>
+                            </div>
+                            <div class="price-box">
+                                <div class="price">
+                                    <p>Price</p>
+                                    <h1> $49.99</h1>
+                                   
+                                </div>
+                                <div class="enroll">
+                                    <a href="#" class="enroll-btn">Enrol Now</a>
+                                    <p>Paid Course Entry</p>
+                                </div>
+                                
+                                <div class="details">
+                                    
+                                        <p>1 Hr Demo Video</p>
+                                        <p>69 Download Resources</p>
+                                        <p>Full Lifetime Access</p>
+                                        <p>Access On Mobile And TV</p>
+                                        <p>Assignments</p>
+                                        <p>Certificate Of Completion</p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   
+
+                    <div class="course-content">
+                        <div class="course-overview">
+                            <h3>Course Overview</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas faucibus mollis interdum. Nulla vitae elit libero, a pharetra augue. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec ullamcorper nulla non metus auctor fringilla. Donec sed odio dui. Aenean lacinia bibendum nulla sed consectetur.</p>
+                        </div>
+                        <div class="what-you-learn">
+                            <h4>What You'll Learn</h4>
+                            <div class="learn-div">
+                                <div class="learn1">
+                                    <p> <img src="../images/check-solid(3) 6.png">Become a UX designer.</p>
+                                    <p><img src="../images/check-solid(3) 6.png">You will be able to add UX designer to your CV</li>
+                                    <p><img src="../images/check-solid(3) 6.png">Become a UI designer.</li>
+                                    <p><img src="../images/check-solid(3) 6.png">Build & test a full website design.</li>
+                                    <p><img src="../images/check-solid(3) 6.png">Build & test a full mobile app.</li>
+                                </div>
+                                <div class="learn2">
+                                    <p><img src="../images/check-solid(3) 6.png">Learn to design websites & mobile phone apps.</p>
+                                    <p><img src="../images/check-solid(3) 6.png">You'll learn how to choose colors.</p>
+                                    <p><img src="../images/check-solid(3) 6.png">Prototype your designs with interactions.</p>
+                                    <p><img src="../images/check-solid(3) 6.png">Export production ready assets.</p>
+                                    <p><img src="../images/check-solid(3) 6.png">All the techniques used by UX professionals</p>
+                                </div>
+                            </div>
+                           
+                        </div>
+                        <div class="requirements">
+                            <h3>Requirements</h3>
+                            <ul>
+                                <li>You will need a copy of Adobe XD 2019 or above. A free trial can be downloaded from Adobe.</li>
+                                <li>No previous design experience is needed.</li>
+                                <li>No previous Adobe XD skills are needed.</li>
+                               
+                            </ul>
+                        </div>
+                    </div>
+                    
+
+                    <div class="course-content">
+                        <h2>Course Content</h2>
+                    
+                        <div class="section">
+                            <!-- <div> -->
+                                <button class="accordion">General</button>
+                                <!-- <img src="../images/chevron-down-solid(1) 3.png"> -->
+                            <!-- </div> -->
+                            
+                            <div class="panel">
+                                <button class="accordion">Lesson 1</button>
+                                <div class="panel">
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,  including versions of Lorem Ipsum.</p>
+                                </div>
+                                <button class="accordion">Lesson 2</button>
+                                <div class="panel">
+                                    <p>Content for Lesson 2.</p>
+                                </div>
+                                <button class="accordion">Lesson 3</button>
+                                <div class="panel">
+                                    <p>Content for Lesson 3.</p>
+                                </div>
+                                <button class="accordion">Lesson 4</button>
+                                <div class="panel">
+                                    <p>Content for Lesson 4.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+
+
+                   
+                </div>
+            </div>
+            <div id="course3" class="course-details">
+                
+                <div class="main-content">
+                    <div class="course-header">
+                        <div class="header1">
+                            <div class="header11">
+                                <div class="profile-pic">
+                            
+                                    <div class="profile-info">
+                                        <img src="..//images/Mask group.png" alt="Profile Picture">
+                                        <h3>Joban Tufan</h3>
+                                        <p>Last Updated 21 December 2019</p>
+                                    </div>
+                                </div>
+                                <div class="course-title">
+                                    <h2>Introduction Web Design & HTML</h2>
+                                </div>
+                                <div class="course-detail">
+                                    <div class="rating">
+                                        <div class="rating1">
+                                            <button>Top Seller</button>
+                                        </div>
+                                        
+                                        <div class="rating2">
+                                            <i>&#9733;</i>
+                                            <i>&#9733;</i>
+                                            <i>&#9733;</i>
+                                            <i>&#9733;</i>
+                                            <i>&#9733;</i>
+                                        </div>
+                                    </div>
+                                    <div  class="info">
+                                        <div class="info1">
+                                            <img src="../images/bxs_user.png">
+                                            <span>2 Students Enrolled</span>
+                                        
+                                        </div>
+                                        <div class="info2">
+                                            <img src="../images/akar-icons_file.png">
+                                            <span>5 Topics</span>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                           
+                            <div class="header12">
+                                <img src="../images/t8 3.png">
+                            </div>
+                        </div>
+                        <div class="header2">
+                            <div class="sure">
+                                    <div>
+                                        <img src="../images/2 2.png">
+                                        <h2>Not Sure ?</h2>
+                                    </div>
+                                    <div>
+                                        <p>Every course comes with a 30-day<br> money-back guarantee</p>
+                                    </div>
+                            </div>
+                            <div class="price-box">
+                                <div class="price">
+                                    <p>Price</p>
+                                    <h1> $49.99</h1>
+                                   
+                                </div>
+                                <div class="enroll">
+                                    <a href="#" class="enroll-btn">Enrol Now</a>
+                                    <p>Paid Course Entry</p>
+                                </div>
+                                
+                                <div class="details">
+                                    
+                                        <p>1 Hr Demo Video</p>
+                                        <p>69 Download Resources</p>
+                                        <p>Full Lifetime Access</p>
+                                        <p>Access On Mobile And TV</p>
+                                        <p>Assignments</p>
+                                        <p>Certificate Of Completion</p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   
+
+                    <div class="course-content">
+                        <div class="course-overview">
+                            <h3>Course Overview</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas faucibus mollis interdum. Nulla vitae elit libero, a pharetra augue. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec ullamcorper nulla non metus auctor fringilla. Donec sed odio dui. Aenean lacinia bibendum nulla sed consectetur.</p>
+                        </div>
+                        <div class="what-you-learn">
+                            <h4>What You'll Learn</h4>
+                            <div class="learn-div">
+                                <div class="learn1">
+                                    <p> <img src="../images/check-solid(3) 6.png">Become a UX designer.</p>
+                                    <p><img src="../images/check-solid(3) 6.png">You will be able to add UX designer to your CV</li>
+                                    <p><img src="../images/check-solid(3) 6.png">Become a UI designer.</li>
+                                    <p><img src="../images/check-solid(3) 6.png">Build & test a full website design.</li>
+                                    <p><img src="../images/check-solid(3) 6.png">Build & test a full mobile app.</li>
+                                </div>
+                                <div class="learn2">
+                                    <p><img src="../images/check-solid(3) 6.png">Learn to design websites & mobile phone apps.</p>
+                                    <p><img src="../images/check-solid(3) 6.png">You'll learn how to choose colors.</p>
+                                    <p><img src="../images/check-solid(3) 6.png">Prototype your designs with interactions.</p>
+                                    <p><img src="../images/check-solid(3) 6.png">Export production ready assets.</p>
+                                    <p><img src="../images/check-solid(3) 6.png">All the techniques used by UX professionals</p>
+                                </div>
+                            </div>
+                           
+                        </div>
+                        <div class="requirements">
+                            <h3>Requirements</h3>
+                            <ul>
+                                <li>You will need a copy of Adobe XD 2019 or above. A free trial can be downloaded from Adobe.</li>
+                                <li>No previous design experience is needed.</li>
+                                <li>No previous Adobe XD skills are needed.</li>
+                               
+                            </ul>
+                        </div>
+                    </div>
+                    
+
+                    <div class="course-content">
+                        <h2>Course Content</h2>
+                    
+                        <div class="section">
+                            <!-- <div> -->
+                                <button class="accordion">General</button>
+                                <!-- <img src="../images/chevron-down-solid(1) 3.png"> -->
+                            <!-- </div> -->
+                            
+                            <div class="panel">
+                                <button class="accordion">Lesson 1</button>
+                                <div class="panel">
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,  including versions of Lorem Ipsum.</p>
+                                </div>
+                                <button class="accordion">Lesson 2</button>
+                                <div class="panel">
+                                    <p>Content for Lesson 2.</p>
+                                </div>
+                                <button class="accordion">Lesson 3</button>
+                                <div class="panel">
+                                    <p>Content for Lesson 3.</p>
+                                </div>
+                                <button class="accordion">Lesson 4</button>
+                                <div class="panel">
+                                    <p>Content for Lesson 4.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+
+
+                   
+                </div>
+            </div>
+            <div id="course4" class="course-details">
+                
+                <div class="main-content">
+                    <div class="course-header">
+                        <div class="header1">
+                            <div class="header11">
+                                <div class="profile-pic">
+                            
+                                    <div class="profile-info">
+                                        <img src="..//images/Mask group.png" alt="Profile Picture">
+                                        <h3>Joban Tufan</h3>
+                                        <p>Last Updated 21 December 2019</p>
+                                    </div>
+                                </div>
+                                <div class="course-title">
+                                    <h2>Sketch: Creating Responsive SVG</h2>
+                                </div>
+                                <div class="course-detail">
+                                    <div class="rating">
+                                        <div class="rating1">
+                                            <button>Top Seller</button>
+                                        </div>
+                                        
+                                        <div class="rating2">
+                                            <i>&#9733;</i>
+                                            <i>&#9733;</i>
+                                            <i>&#9733;</i>
+                                            <i>&#9733;</i>
+                                            <i>&#9733;</i>
+                                        </div>
+                                    </div>
+                                    <div  class="info">
+                                        <div class="info1">
+                                            <img src="../images/bxs_user.png">
+                                            <span>2 Students Enrolled</span>
+                                        
+                                        </div>
+                                        <div class="info2">
+                                            <img src="../images/akar-icons_file.png">
+                                            <span>5 Topics</span>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                           
+                            <div class="header12">
+                                <img src="../images/t8 4.png">
+                            </div>
+                        </div>
+                        <div class="header2">
+                            <div class="sure">
+                                    <div>
+                                        <img src="../images/2 2.png">
+                                        <h2>Not Sure ?</h2>
+                                    </div>
+                                    <div>
+                                        <p>Every course comes with a 30-day<br> money-back guarantee</p>
+                                    </div>
+                            </div>
+                            <div class="price-box">
+                                <div class="price">
+                                    <p>Price</p>
+                                    <h1> $49.99</h1>
+                                   
+                                </div>
+                                <div class="enroll">
+                                    <a href="#" class="enroll-btn">Enrol Now</a>
+                                    <p>Paid Course Entry</p>
+                                </div>
+                                
+                                <div class="details">
+                                    
+                                        <p>1 Hr Demo Video</p>
+                                        <p>69 Download Resources</p>
+                                        <p>Full Lifetime Access</p>
+                                        <p>Access On Mobile And TV</p>
+                                        <p>Assignments</p>
+                                        <p>Certificate Of Completion</p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   
+
+                    <div class="course-content">
+                        <div class="course-overview">
+                            <h3>Course Overview</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas faucibus mollis interdum. Nulla vitae elit libero, a pharetra augue. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec ullamcorper nulla non metus auctor fringilla. Donec sed odio dui. Aenean lacinia bibendum nulla sed consectetur.</p>
+                        </div>
+                        <div class="what-you-learn">
+                            <h4>What You'll Learn</h4>
+                            <div class="learn-div">
+                                <div class="learn1">
+                                    <p> <img src="../images/check-solid(3) 6.png">Become a UX designer.</p>
+                                    <p><img src="../images/check-solid(3) 6.png">You will be able to add UX designer to your CV</li>
+                                    <p><img src="../images/check-solid(3) 6.png">Become a UI designer.</li>
+                                    <p><img src="../images/check-solid(3) 6.png">Build & test a full website design.</li>
+                                    <p><img src="../images/check-solid(3) 6.png">Build & test a full mobile app.</li>
+                                </div>
+                                <div class="learn2">
+                                    <p><img src="../images/check-solid(3) 6.png">Learn to design websites & mobile phone apps.</p>
+                                    <p><img src="../images/check-solid(3) 6.png">You'll learn how to choose colors.</p>
+                                    <p><img src="../images/check-solid(3) 6.png">Prototype your designs with interactions.</p>
+                                    <p><img src="../images/check-solid(3) 6.png">Export production ready assets.</p>
+                                    <p><img src="../images/check-solid(3) 6.png">All the techniques used by UX professionals</p>
+                                </div>
+                            </div>
+                           
+                        </div>
+                        <div class="requirements">
+                            <h3>Requirements</h3>
+                            <ul>
+                                <li>You will need a copy of Adobe XD 2019 or above. A free trial can be downloaded from Adobe.</li>
+                                <li>No previous design experience is needed.</li>
+                                <li>No previous Adobe XD skills are needed.</li>
+                               
+                            </ul>
+                        </div>
+                    </div>
+                    
+
+                    <div class="course-content">
+                        <h2>Course Content</h2>
+                    
+                        <div class="section">
+                            <!-- <div> -->
+                                <button class="accordion">General</button>
+                                <!-- <img src="../images/chevron-down-solid(1) 3.png"> -->
+                            <!-- </div> -->
+                            
+                            <div class="panel">
+                                <button class="accordion">Lesson 1</button>
+                                <div class="panel">
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,  including versions of Lorem Ipsum.</p>
+                                </div>
+                                <button class="accordion">Lesson 2</button>
+                                <div class="panel">
+                                    <p>Content for Lesson 2.</p>
+                                </div>
+                                <button class="accordion">Lesson 3</button>
+                                <div class="panel">
+                                    <p>Content for Lesson 3.</p>
+                                </div>
+                                <button class="accordion">Lesson 4</button>
+                                <div class="panel">
+                                    <p>Content for Lesson 4.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+
+
+                   
+                </div>
+            </div>
+            <div id="course5" class="course-details">
+                
+                <div class="main-content">
+                    <div class="course-header">
+                        <div class="header1">
+                            <div class="header11">
+                                <div class="profile-pic">
+                            
+                                    <div class="profile-info">
+                                        <img src="..//images/Mask group.png" alt="Profile Picture">
+                                        <h3>Joban Tufan</h3>
+                                        <p>Last Updated 21 December 2019</p>
+                                    </div>
+                                </div>
+                                <div class="course-title">
+                                    <h2>How to Make Beautiful Landscape Photos?</h2>
+                                </div>
+                                <div class="course-detail">
+                                    <div class="rating">
+                                        <div class="rating1">
+                                            <button>Top Seller</button>
+                                        </div>
+                                        
+                                        <div class="rating2">
+                                            <i>&#9733;</i>
+                                            <i>&#9733;</i>
+                                            <i>&#9733;</i>
+                                            <i>&#9733;</i>
+                                            <i>&#9733;</i>
+                                        </div>
+                                    </div>
+                                    <div  class="info">
+                                        <div class="info1">
+                                            <img src="../images/bxs_user.png">
+                                            <span>2 Students Enrolled</span>
+                                        
+                                        </div>
+                                        <div class="info2">
+                                            <img src="../images/akar-icons_file.png">
+                                            <span>5 Topics</span>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                           
+                            <div class="header12">
+                                <img src="../images/t8 5.png">
+                            </div>
+                        </div>
+                        <div class="header2">
+                            <div class="sure">
+                                    <div>
+                                        <img src="../images/2 2.png">
+                                        <h2>Not Sure ?</h2>
+                                    </div>
+                                    <div>
+                                        <p>Every course comes with a 30-day<br> money-back guarantee</p>
+                                    </div>
+                            </div>
+                            <div class="price-box">
+                                <div class="price">
+                                    <p>Price</p>
+                                    <h1> $49.99</h1>
+                                   
+                                </div>
+                                <div class="enroll">
+                                    <a href="#" class="enroll-btn">Enrol Now</a>
+                                    <p>Paid Course Entry</p>
+                                </div>
+                                
+                                <div class="details">
+                                    
+                                        <p>1 Hr Demo Video</p>
+                                        <p>69 Download Resources</p>
+                                        <p>Full Lifetime Access</p>
+                                        <p>Access On Mobile And TV</p>
+                                        <p>Assignments</p>
+                                        <p>Certificate Of Completion</p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   
+
+                    <div class="course-content">
+                        <div class="course-overview">
+                            <h3>Course Overview</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas faucibus mollis interdum. Nulla vitae elit libero, a pharetra augue. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec ullamcorper nulla non metus auctor fringilla. Donec sed odio dui. Aenean lacinia bibendum nulla sed consectetur.</p>
+                        </div>
+                        <div class="what-you-learn">
+                            <h4>What You'll Learn</h4>
+                            <div class="learn-div">
+                                <div class="learn1">
+                                    <p> <img src="../images/check-solid(3) 6.png">Become a UX designer.</p>
+                                    <p><img src="../images/check-solid(3) 6.png">You will be able to add UX designer to your CV</li>
+                                    <p><img src="../images/check-solid(3) 6.png">Become a UI designer.</li>
+                                    <p><img src="../images/check-solid(3) 6.png">Build & test a full website design.</li>
+                                    <p><img src="../images/check-solid(3) 6.png">Build & test a full mobile app.</li>
+                                </div>
+                                <div class="learn2">
+                                    <p><img src="../images/check-solid(3) 6.png">Learn to design websites & mobile phone apps.</p>
+                                    <p><img src="../images/check-solid(3) 6.png">You'll learn how to choose colors.</p>
+                                    <p><img src="../images/check-solid(3) 6.png">Prototype your designs with interactions.</p>
+                                    <p><img src="../images/check-solid(3) 6.png">Export production ready assets.</p>
+                                    <p><img src="../images/check-solid(3) 6.png">All the techniques used by UX professionals</p>
+                                </div>
+                            </div>
+                           
+                        </div>
+                        <div class="requirements">
+                            <h3>Requirements</h3>
+                            <ul>
+                                <li>You will need a copy of Adobe XD 2019 or above. A free trial can be downloaded from Adobe.</li>
+                                <li>No previous design experience is needed.</li>
+                                <li>No previous Adobe XD skills are needed.</li>
+                               
+                            </ul>
+                        </div>
+                    </div>
+                    
+
+                    <div class="course-content">
+                        <h2>Course Content</h2>
+                    
+                        <div class="section">
+                            <!-- <div> -->
+                                <button class="accordion">General</button>
+                                <!-- <img src="../images/chevron-down-solid(1) 3.png"> -->
+                            <!-- </div> -->
+                            
+                            <div class="panel">
+                                <button class="accordion">Lesson 1</button>
+                                <div class="panel">
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,  including versions of Lorem Ipsum.</p>
+                                </div>
+                                <button class="accordion">Lesson 2</button>
+                                <div class="panel">
+                                    <p>Content for Lesson 2.</p>
+                                </div>
+                                <button class="accordion">Lesson 3</button>
+                                <div class="panel">
+                                    <p>Content for Lesson 3.</p>
+                                </div>
+                                <button class="accordion">Lesson 4</button>
+                                <div class="panel">
+                                    <p>Content for Lesson 4.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+
+
+                   
+                </div>
+            </div>
+            <div id="course6" class="course-details">
+                
+                <div class="main-content">
+                    <div class="course-header">
+                        <div class="header1">
+                            <div class="header11">
+                                <div class="profile-pic">
+                            
+                                    <div class="profile-info">
+                                        <img src="..//images/Mask group.png" alt="Profile Picture">
+                                        <h3>Joban Tufan</h3>
+                                        <p>Last Updated 21 December 2019</p>
+                                    </div>
+                                </div>
+                                <div class="course-title">
+                                    <h2>Design Instruments for Communication</h2>
+                                </div>
+                                <div class="course-detail">
+                                    <div class="rating">
+                                        <div class="rating1">
+                                            <button>Top Seller</button>
+                                        </div>
+                                        
+                                        <div class="rating2">
+                                            <i>&#9733;</i>
+                                            <i>&#9733;</i>
+                                            <i>&#9733;</i>
+                                            <i>&#9733;</i>
+                                            <i>&#9733;</i>
+                                        </div>
+                                    </div>
+                                    <div  class="info">
+                                        <div class="info1">
+                                            <img src="../images/bxs_user.png">
+                                            <span>2 Students Enrolled</span>
+                                        
+                                        </div>
+                                        <div class="info2">
+                                            <img src="../images/akar-icons_file.png">
+                                            <span>5 Topics</span>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                           
+                            <div class="header12">
+                                <img src="../images/t8 6.png">
+                            </div>
+                        </div>
+                        <div class="header2">
+                            <div class="sure">
+                                    <div>
+                                        <img src="../images/2 2.png">
+                                        <h2>Not Sure ?</h2>
+                                    </div>
+                                    <div>
+                                        <p>Every course comes with a 30-day<br> money-back guarantee</p>
+                                    </div>
+                            </div>
+                            <div class="price-box">
+                                <div class="price">
+                                    <p>Price</p>
+                                    <h1> $49.99</h1>
+                                   
+                                </div>
+                                <div class="enroll">
+                                    <a href="#" class="enroll-btn">Enrol Now</a>
+                                    <p>Paid Course Entry</p>
+                                </div>
+                                
+                                <div class="details">
+                                    
+                                        <p>1 Hr Demo Video</p>
+                                        <p>69 Download Resources</p>
+                                        <p>Full Lifetime Access</p>
+                                        <p>Access On Mobile And TV</p>
+                                        <p>Assignments</p>
+                                        <p>Certificate Of Completion</p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   
+
+                    <div class="course-content">
+                        <div class="course-overview">
+                            <h3>Course Overview</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas faucibus mollis interdum. Nulla vitae elit libero, a pharetra augue. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec ullamcorper nulla non metus auctor fringilla. Donec sed odio dui. Aenean lacinia bibendum nulla sed consectetur.</p>
+                        </div>
+                        <div class="what-you-learn">
+                            <h4>What You'll Learn</h4>
+                            <div class="learn-div">
+                                <div class="learn1">
+                                    <p> <img src="../images/check-solid(3) 6.png">Become a UX designer.</p>
+                                    <p><img src="../images/check-solid(3) 6.png">You will be able to add UX designer to your CV</li>
+                                    <p><img src="../images/check-solid(3) 6.png">Become a UI designer.</li>
+                                    <p><img src="../images/check-solid(3) 6.png">Build & test a full website design.</li>
+                                    <p><img src="../images/check-solid(3) 6.png">Build & test a full mobile app.</li>
+                                </div>
+                                <div class="learn2">
+                                    <p><img src="../images/check-solid(3) 6.png">Learn to design websites & mobile phone apps.</p>
+                                    <p><img src="../images/check-solid(3) 6.png">You'll learn how to choose colors.</p>
+                                    <p><img src="../images/check-solid(3) 6.png">Prototype your designs with interactions.</p>
+                                    <p><img src="../images/check-solid(3) 6.png">Export production ready assets.</p>
+                                    <p><img src="../images/check-solid(3) 6.png">All the techniques used by UX professionals</p>
+                                </div>
+                            </div>
+                           
+                        </div>
+                        <div class="requirements">
+                            <h3>Requirements</h3>
+                            <ul>
+                                <li>You will need a copy of Adobe XD 2019 or above. A free trial can be downloaded from Adobe.</li>
+                                <li>No previous design experience is needed.</li>
+                                <li>No previous Adobe XD skills are needed.</li>
+                               
+                            </ul>
+                        </div>
+                    </div>
+                    
+
+                    <div class="course-content">
+                        <h2>Course Content</h2>
+                    
+                        <div class="section">
+                            <!-- <div> -->
+                                <button class="accordion">General</button>
+                                <!-- <img src="../images/chevron-down-solid(1) 3.png"> -->
+                            <!-- </div> -->
+                            
+                            <div class="panel">
+                                <button class="accordion">Lesson 1</button>
+                                <div class="panel">
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,  including versions of Lorem Ipsum.</p>
+                                </div>
+                                <button class="accordion">Lesson 2</button>
+                                <div class="panel">
+                                    <p>Content for Lesson 2.</p>
+                                </div>
+                                <button class="accordion">Lesson 3</button>
+                                <div class="panel">
+                                    <p>Content for Lesson 3.</p>
+                                </div>
+                                <button class="accordion">Lesson 4</button>
+                                <div class="panel">
+                                    <p>Content for Lesson 4.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+
+
+                   
+                </div>
+            </div>
+            <div id="course7" class="course-details">
+                
+                <div class="main-content">
+                    <div class="course-header">
+                        <div class="header1">
+                            <div class="header11">
+                                <div class="profile-pic">
+                            
+                                    <div class="profile-info">
+                                        <img src="..//images/Mask group.png" alt="Profile Picture">
+                                        <h3>Joban Tufan</h3>
+                                        <p>Last Updated 21 December 2019</p>
+                                    </div>
+                                </div>
+                                <div class="course-title">
+                                    <h2>Fashion Photography From Professional</h2>
+                                </div>
+                                <div class="course-detail">
+                                    <div class="rating">
+                                        <div class="rating1">
+                                            <button>Top Seller</button>
+                                        </div>
+                                        
+                                        <div class="rating2">
+                                            <i>&#9733;</i>
+                                            <i>&#9733;</i>
+                                            <i>&#9733;</i>
+                                            <i>&#9733;</i>
+                                            <i>&#9733;</i>
+                                        </div>
+                                    </div>
+                                    <div  class="info">
+                                        <div class="info1">
+                                            <img src="../images/bxs_user.png">
+                                            <span>2 Students Enrolled</span>
+                                        
+                                        </div>
+                                        <div class="info2">
+                                            <img src="../images/akar-icons_file.png">
+                                            <span>5 Topics</span>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                           
+                            <div class="header12">
+                                <img src="../images/t8 7.png">
+                            </div>
+                        </div>
+                        <div class="header2">
+                            <div class="sure">
+                                    <div>
+                                        <img src="../images/2 2.png">
+                                        <h2>Not Sure ?</h2>
+                                    </div>
+                                    <div>
+                                        <p>Every course comes with a 30-day<br> money-back guarantee</p>
+                                    </div>
+                            </div>
+                            <div class="price-box">
+                                <div class="price">
+                                    <p>Price</p>
+                                    <h1> $49.99</h1>
+                                   
+                                </div>
+                                <div class="enroll">
+                                    <a href="#" class="enroll-btn">Enrol Now</a>
+                                    <p>Paid Course Entry</p>
+                                </div>
+                                
+                                <div class="details">
+                                    
+                                        <p>1 Hr Demo Video</p>
+                                        <p>69 Download Resources</p>
+                                        <p>Full Lifetime Access</p>
+                                        <p>Access On Mobile And TV</p>
+                                        <p>Assignments</p>
+                                        <p>Certificate Of Completion</p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   
+
+                    <div class="course-content">
+                        <div class="course-overview">
+                            <h3>Course Overview</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas faucibus mollis interdum. Nulla vitae elit libero, a pharetra augue. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec ullamcorper nulla non metus auctor fringilla. Donec sed odio dui. Aenean lacinia bibendum nulla sed consectetur.</p>
+                        </div>
+                        <div class="what-you-learn">
+                            <h4>What You'll Learn</h4>
+                            <div class="learn-div">
+                                <div class="learn1">
+                                    <p> <img src="../images/check-solid(3) 6.png">Become a UX designer.</p>
+                                    <p><img src="../images/check-solid(3) 6.png">You will be able to add UX designer to your CV</li>
+                                    <p><img src="../images/check-solid(3) 6.png">Become a UI designer.</li>
+                                    <p><img src="../images/check-solid(3) 6.png">Build & test a full website design.</li>
+                                    <p><img src="../images/check-solid(3) 6.png">Build & test a full mobile app.</li>
+                                </div>
+                                <div class="learn2">
+                                    <p><img src="../images/check-solid(3) 6.png">Learn to design websites & mobile phone apps.</p>
+                                    <p><img src="../images/check-solid(3) 6.png">You'll learn how to choose colors.</p>
+                                    <p><img src="../images/check-solid(3) 6.png">Prototype your designs with interactions.</p>
+                                    <p><img src="../images/check-solid(3) 6.png">Export production ready assets.</p>
+                                    <p><img src="../images/check-solid(3) 6.png">All the techniques used by UX professionals</p>
+                                </div>
+                            </div>
+                           
+                        </div>
+                        <div class="requirements">
+                            <h3>Requirements</h3>
+                            <ul>
+                                <li>You will need a copy of Adobe XD 2019 or above. A free trial can be downloaded from Adobe.</li>
+                                <li>No previous design experience is needed.</li>
+                                <li>No previous Adobe XD skills are needed.</li>
+                               
+                            </ul>
+                        </div>
+                    </div>
+                    
+
+                    <div class="course-content">
+                        <h2>Course Content</h2>
+                    
+                        <div class="section">
+                            <!-- <div> -->
+                                <button class="accordion">General</button>
+                                <!-- <img src="../images/chevron-down-solid(1) 3.png"> -->
+                            <!-- </div> -->
+                            
+                            <div class="panel">
+                                <button class="accordion">Lesson 1</button>
+                                <div class="panel">
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,  including versions of Lorem Ipsum.</p>
+                                </div>
+                                <button class="accordion">Lesson 2</button>
+                                <div class="panel">
+                                    <p>Content for Lesson 2.</p>
+                                </div>
+                                <button class="accordion">Lesson 3</button>
+                                <div class="panel">
+                                    <p>Content for Lesson 3.</p>
+                                </div>
+                                <button class="accordion">Lesson 4</button>
+                                <div class="panel">
+                                    <p>Content for Lesson 4.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+
+
+                   
+                </div>
+            </div>
+            <div id="course8" class="course-details">
+                
+                <div class="main-content">
+                    <div class="course-header">
+                        <div class="header1">
+                            <div class="header11">
+                                <div class="profile-pic">
+                            
+                                    <div class="profile-info">
+                                        <img src="..//images/Mask group.png" alt="Profile Picture">
+                                        <h3>Joban Tufan</h3>
+                                        <p>Last Updated 21 December 2019</p>
+                                    </div>
+                                </div>
+                                <div class="course-title">
+                                    <h2>How to be a DJ? Make Electronic Music</h2>
+                                </div>
+                                <div class="course-detail">
+                                    <div class="rating">
+                                        <div class="rating1">
+                                            <button>Top Seller</button>
+                                        </div>
+                                        
+                                        <div class="rating2">
+                                            <i>&#9733;</i>
+                                            <i>&#9733;</i>
+                                            <i>&#9733;</i>
+                                            <i>&#9733;</i>
+                                            <i>&#9733;</i>
+                                        </div>
+                                    </div>
+                                    <div  class="info">
+                                        <div class="info1">
+                                            <img src="../images/bxs_user.png">
+                                            <span>2 Students Enrolled</span>
+                                        
+                                        </div>
+                                        <div class="info2">
+                                            <img src="../images/akar-icons_file.png">
+                                            <span>5 Topics</span>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                           
+                            <div class="header12">
+                                <img src="../images/t8 8.png">
+                            </div>
+                        </div>
+                        <div class="header2">
+                            <div class="sure">
+                                    <div>
+                                        <img src="../images/2 2.png">
+                                        <h2>Not Sure ?</h2>
+                                    </div>
+                                    <div>
+                                        <p>Every course comes with a 30-day<br> money-back guarantee</p>
+                                    </div>
+                            </div>
+                            <div class="price-box">
+                                <div class="price">
+                                    <p>Price</p>
+                                    <h1> $49.99</h1>
+                                   
+                                </div>
+                                <div class="enroll">
+                                    <a href="#" class="enroll-btn">Enrol Now</a>
+                                    <p>Paid Course Entry</p>
+                                </div>
+                                
+                                <div class="details">
+                                    
+                                        <p>1 Hr Demo Video</p>
+                                        <p>69 Download Resources</p>
+                                        <p>Full Lifetime Access</p>
+                                        <p>Access On Mobile And TV</p>
+                                        <p>Assignments</p>
+                                        <p>Certificate Of Completion</p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   
+
+                    <div class="course-content">
+                        <div class="course-overview">
+                            <h3>Course Overview</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas faucibus mollis interdum. Nulla vitae elit libero, a pharetra augue. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec ullamcorper nulla non metus auctor fringilla. Donec sed odio dui. Aenean lacinia bibendum nulla sed consectetur.</p>
+                        </div>
+                        <div class="what-you-learn">
+                            <h4>What You'll Learn</h4>
+                            <div class="learn-div">
+                                <div class="learn1">
+                                    <p> <img src="../images/check-solid(3) 6.png">Become a UX designer.</p>
+                                    <p><img src="../images/check-solid(3) 6.png">You will be able to add UX designer to your CV</li>
+                                    <p><img src="../images/check-solid(3) 6.png">Become a UI designer.</li>
+                                    <p><img src="../images/check-solid(3) 6.png">Build & test a full website design.</li>
+                                    <p><img src="../images/check-solid(3) 6.png">Build & test a full mobile app.</li>
+                                </div>
+                                <div class="learn2">
+                                    <p><img src="../images/check-solid(3) 6.png">Learn to design websites & mobile phone apps.</p>
+                                    <p><img src="../images/check-solid(3) 6.png">You'll learn how to choose colors.</p>
+                                    <p><img src="../images/check-solid(3) 6.png">Prototype your designs with interactions.</p>
+                                    <p><img src="../images/check-solid(3) 6.png">Export production ready assets.</p>
+                                    <p><img src="../images/check-solid(3) 6.png">All the techniques used by UX professionals</p>
+                                </div>
+                            </div>
+                           
+                        </div>
+                        <div class="requirements">
+                            <h3>Requirements</h3>
+                            <ul>
+                                <li>You will need a copy of Adobe XD 2019 or above. A free trial can be downloaded from Adobe.</li>
+                                <li>No previous design experience is needed.</li>
+                                <li>No previous Adobe XD skills are needed.</li>
+                               
+                            </ul>
+                        </div>
+                    </div>
+                    
+
+                    <div class="course-content">
+                        <h2>Course Content</h2>
+                    
+                        <div class="section">
+                            <!-- <div> -->
+                                <button class="accordion">General</button>
+                                <!-- <img src="../images/chevron-down-solid(1) 3.png"> -->
+                            <!-- </div> -->
+                            
+                            <div class="panel">
+                                <button class="accordion">Lesson 1</button>
+                                <div class="panel">
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,  including versions of Lorem Ipsum.</p>
+                                </div>
+                                <button class="accordion">Lesson 2</button>
+                                <div class="panel">
+                                    <p>Content for Lesson 2.</p>
+                                </div>
+                                <button class="accordion">Lesson 3</button>
+                                <div class="panel">
+                                    <p>Content for Lesson 3.</p>
+                                </div>
+                                <button class="accordion">Lesson 4</button>
+                                <div class="panel">
+                                    <p>Content for Lesson 4.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+
+
+                   
+                </div>
+            </div>
+            
+            
+            </div>
+
+
+            
+        <!-- Online Section -->
+         <div class="online">
+            <p>STARTING ONLINE LEARNING</p>
+            <h2>Enhance Your Skills With Best <br>Online Courses</h2>
+            <button class="ready-btn">Ready to Get Started?</button>
+
+         </div>
+        <!-- People Says-->
+        <div class="testimonial-container">
+            <h2 id="people">What People Say</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial-item active">
+                    <div class="testimonial-content">
+                        
+                        <blockquote>
+                            <p class="person-para">Choosing this institute was the best decision. The nurturing atmosphere and dynamic curriculum enriched my learning experience. The knowledgeable faculty empowered me to achieve my goals. Truly a top-notch education!</p>
+                            <img class="person-img" src="../images/Ellipse 24.png" alt="Person 1">
+                            <img  class="rect1" src="../images/Rectangle 33 (1).png">
+                            <img class="rect2" src="../images/Rectangle 34.png">
+                            <h3 class="person-name">Maria Latin</h3>
+                            <p class="person-rate">★★★★★</p>
+                           
+                        </blockquote>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                       
+                        <blockquote>
+                            <img class="person-img" src="../images/Ellipse 38.png" alt="Person 2">
+                            <img  class="rect1" src="../images/Rectangle 33 (1).png">
+                            <img class="rect2" src="../images/Rectangle 34.png">
+                            <h3 class="person-name">Amie</h3>
+                            <p class="person-rate">★★★★★</p>
+                            <p class="person-para">Exceptional institute! The supportive environment and expert guidance fueled my academic journey. The diverse programs prepared me for real-world challenges. Highly recommend this educational haven!</p>
+                            
+                        </blockquote>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                       
+                        <blockquote id="quote">
+                            <img class="person-img" src="../images/Ellipse 42.png" alt="Person 3">
+                            <img  class="rect1" src="../images/Rectangle 33 (1).png">
+                            <img class="rect2" src="../images/Rectangle 34.png">
+                            <h3 class="person-name">Delaney</h3>
+                            <p class="person-rate">★★★★★</p>
+                            <p class="person-para">Enrolling in this institute was life-changing. The dedicated faculty and cutting-edge resources helped me excel academically and personally. Grateful for the transformative education I received.</p>
+                            
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-navigation">
+                <button id="prevBtn">&larr;</button>
+                <button id="nextBtn">&rarr;</button>
+            </div>
+        </div>
+
+        <!-- Test -->
+        <div class="test">
+            <!-- <img src="../images/Rectangle 35.png"> -->
+            <h2>Access Your Courses Anywhere, Anytime <br>& Prepare With Practice Tests.</h2>
+         </div>
+
+         <!-- Newsletter -->
+         <div class="newsletter">
+            <h2>Get Newsletter</h2>
+            <p>Your Download Should Start Automatically, If Not Click Here. Should I Give Up, Huh?</p>
+            <div id="newsletter-btn">
+                <input type="text" placeholder="Email" name="email">
+                <button type="submit">Get It Now   </button>
+            </div>
+            
+          </div>
+
+
+
+          <!-- Footer -->
+          <div class="footer">
+            <div class="footer-container">
+                <div class="footer-section about">
+                    <img  id="logo-foot" src="../images/logo 3.png">
+                    <p>
+                        Discover a world of knowledge at our esteemed education institute. 
+                        We foster academic excellence, creativity, and personal growth. Our innovative programs ensure 
+                        a transformative learning experience, preparing students for a successful future.
+                    </p>
+                </div>
+                <div class="footer-section contact">
+                    <h2>Contact</h2>
+                    <p>329 Queensberry Street, North Melbourne,<br> VIC 3051, Australia.</p>
+                    <p>123 456 7890</p>
+                    <p>Support@Edumy.Com</p>
+                </div>
+                <div class="footer-section company">
+                    <h2>Company</h2>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Become a Teacher</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section programs">
+                    <h2>Programs</h2>
+                    <ul>
+                        <li><a href="#">Nanodegree Plus</a></li>
+                        <li><a href="#">Veterans</a></li>
+                        <li><a href="#">Georgia</a></li>
+                        <li><a href="#">Self-Driving Car</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Copyright © 2023 Education Theme. All Rights Reserved</p>
+            </div>
+        </div>
+        
+    </div>
+    <!-- <script src="course.js"></script> -->
+    <script src="../Js/common.js"></script>
+</body>
+</html>

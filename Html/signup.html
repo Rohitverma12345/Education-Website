@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <title>Sign Up Page</title>
+    <link rel="stylesheet" href="../Css/main.css">
+</head>
+<body>
+    <div>
+
+   
+        <header id="register_header">
+            <nav class="navbar">
+                
+                <div class="navbar-container">
+                    <a href="#" class="logo">
+                        <img src="../images/logo 1.png" alt="Logo">
+                    </a>
+                    <ul class="nav-links">
+                        <li><a href="../Html/home.html" class="active">Home</a></li>
+                        <li><a href="../Html/course.html">Courses</a></li>
+                        <li id="my-courses-link"><a href="../Html/mycourse.html">My Courses</a></li>
+                        <li id="add-courses-link"><a href="../Html/addcourse.html">Add Courses</a></li>
+                        <li><a href="../Html/contact.html">Contact</a></li>
+                    </ul>
+                    <div class="auth-buttons">
+                        
+                           
+                            <button id="auth-button" onclick="redirectToLogin()"  class="login-btn">  <i class="fas fa-sign-in-alt icon-space" aria-hidden="true"></i>Login</button>
+                        
+                        
+                        <button onclick="registerUser()" class="register-btn"><i class="fas fa-users icon-space"></i>Register</button>
+                    </div>
+                     <!-- Hamburger Icon -->
+                     <div class="hamburger">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </div>
+            </nav>
+            <div class="hero-section">
+                <h1>Sign Up</h1>
+                <p>Sign Up</p>
+                <!-- <button class="ready-btn">Ready To Get Started?</button> -->
+            </div>
+            <!-- <img src="../images/Ellipse 3.png"> -->
+        </header>
+
+
+
+    <div class="signup">
+        <!-- <h1>Register</h1> -->
+        <form id="register-form">
+            <div class="rdiv1">
+                <div class="rdiv11">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" placeholder="Enter Username" required>
+                </div>
+                <div class="rdiv12">
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="email" placeholder="Enter Email" required style="border: 1px solid #DBE0E9 !important; border-radius: 5px !important; font-size: 18px !important; font-family: 'Open Sans', sans-serif !important;">
+                </div>
+            </div>
+            
+           <div class="rdiv2">
+                <div class="rdiv21">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Enter Password" required>
+                </div>
+                <div class="rdiv22">
+                    <label for="confirm-password">Re-Password:</label>
+                    <input type="password" id="confirm-password" name="confirm-password" placeholder="Enter Password" required>
+                </div>
+            
+           </div>
+            <div class="rdiv3">
+                <label for="role">Select Role:</label>
+                <select id="role" name="role" required placeholder="Student">
+                    <option class="roles" value="student">Student</option>
+                    <option class="roles" value="tutor">Tutor</option>
+                </select>
+            </div>
+            
+            <div class="rdiv4">
+                <input type="checkbox" id="remember-me" name="remember-me">
+                <label for="remember-me">Remember Me</label>
+               
+            </div>
+            <div class="rdiv5">
+                <div class="div51">
+                    <p>Already Have Account  </p>
+                    <a href="../Login/login.html"> Login ?</a>
+                    
+                </div>
+                <div class="rdiv52">
+                    <input type="submit" value="Sign Up">
+                </div>
+                
+            </div>
+            
+        </form>
+    </div>
+    
+
+    
+        <!-- Newsletter -->
+       <div class="newsletter">
+        <h2>Get Newsletter</h2>
+        <p>Your Download Should Start Automatically, If Not Click Here. Should I Give Up, Huh?</p>
+        <div id="newsletter-btn">
+            <input type="text" placeholder="Email" name="email">
+            <button type="submit">Get It Now   </button>
+        </div>
+        
+      </div>
+
+
+
+      <!-- Footer -->
+      <div class="footer">
+        <div class="footer-container">
+            <div class="footer-section about">
+                <img  id="logo-foot" src="../images/logo 3.png">
+                <p>
+                    Discover a world of knowledge at our esteemed education institute. 
+                    We foster academic excellence, creativity, and personal growth. Our innovative programs ensure 
+                    a transformative learning experience, preparing students for a successful future.
+                </p>
+            </div>
+            <div class="footer-section contact">
+                <h2>Contact</h2>
+                <p>329 Queensberry Street, North Melbourne,<br> VIC 3051, Australia.</p>
+                <p>123 456 7890</p>
+                <p>Support@Edumy.Com</p>
+            </div>
+            <div class="footer-section company">
+                <h2>Company</h2>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Become a Teacher</a></li>
+                </ul>
+            </div>
+            <div class="footer-section programs">
+                <h2>Programs</h2>
+                <ul>
+                    <li><a href="#">Nanodegree Plus</a></li>
+                    <li><a href="#">Veterans</a></li>
+                    <li><a href="#">Georgia</a></li>
+                    <li><a href="#">Self-Driving Car</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright © 2023 Education Theme. All Rights Reserved</p>
+        </div>
+    </div>
+    
+    </div>
+    
+    <script src="../Js/common.js"></script>
+</body>
+</html>

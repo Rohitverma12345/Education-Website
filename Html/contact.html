@@ -1,0 +1,154 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="../Css/main.css">
+</head>
+<body>
+    <div>
+        <header id="contact_header">
+            <nav class="navbar">
+                
+                <div class="navbar-container">
+                    <a href="#" class="logo">
+                        <img src="../images/logo 1.png" alt="Logo">
+                    </a>
+                    <ul class="nav-links">
+                        <li><a href="../Html/home.html" class="active">Home</a></li>
+                        <li><a href="../Html/course.html">Courses</a></li>
+                        <li id="my-courses-link"><a href="../Html/mycourse.html">My Courses</a></li>
+                        <li id="add-courses-link"><a href="../Html/addcourse.html">Add Courses</a></li>
+                        <li><a href="../Html/contact.html">Contact</a></li>
+                    </ul>
+                    <div class="auth-buttons">
+                        
+                           
+                            <button id="auth-button" onclick="redirectToLogin()"  class="login-btn">  <i class="fas fa-sign-in-alt icon-space" aria-hidden="true"></i>Login</button>
+                        
+                        
+                        <button onclick="registerUser()" class="register-btn"><i class="fas fa-users icon-space"></i>Register</button>
+                    </div>
+                     <!-- Hamburger Icon -->
+                     <div class="hamburger">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </div>
+            </nav>
+            <div class="hero-section">
+                <h1>Contact</h1>
+                <p>Home / Contact</p>
+                <!-- <button class="ready-btn">Ready To Get Started?</button> -->
+            </div>
+            <!-- <img src="../images/Ellipse 3.png"> -->
+        </header>
+
+    
+        <section class="contact-section">
+            <div class="contact-info">
+                <div class="info-block">
+                    <img class="location-icon" src="../images/mdi_locations.png"/>
+                    <h3>Our Location</h3>
+                    <p>Collin Street West, Victor 8007, Australia.</p>
+                </div>
+                <div class="info-block">
+                    <img class="phone-icon" src="../images/ion_call-outline.png"/>
+                    <h3>Our Numbers</h3>
+                    <p>Mobile: (+096) 468 235</p>
+                </div>
+                <div class="info-block">
+                    <img class="email-icon" src="../images/clarity_email-line.png"/>
+                    <h3>Our Email</h3>
+                    <p>Info@Edumy.Com</p>
+                </div>
+            </div>
+    
+            <div class="contact-content">
+                <div class="contact-image">
+                    <img src="../images/Rectangle 121.png" alt="Contact Image">
+                </div>
+                <form class="contact-form">
+                    <h3>Send A Message</h3>
+                    <p>Course Name</p>
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" placeholder="">
+    
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" placeholder="">
+    
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" placeholder="">
+    
+                    <label for="message">Message</label>
+                    <textarea id="message" placeholder=""></textarea>
+    
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </section>
+
+        
+         <!-- Newsletter -->
+         <div class="newsletter">
+            <h2>Get Newsletter</h2>
+            <p>Your Download Should Start Automatically, If Not Click Here. Should I Give Up, Huh?</p>
+            <div id="newsletter-btn">
+                <input type="text" placeholder="Email" name="email">
+                <button type="submit">Get It Now   </button>
+            </div>
+            
+          </div>
+
+
+
+          <!-- Footer -->
+          <div class="footer">
+            <div class="footer-container">
+                <div class="footer-section about">
+                    <img  id="logo-foot" src="../images/logo 3.png">
+                    <p>
+                        Discover a world of knowledge at our esteemed education institute. 
+                        We foster academic excellence, creativity, and personal growth. Our innovative programs ensure 
+                        a transformative learning experience, preparing students for a successful future.
+                    </p>
+                </div>
+                <div class="footer-section contact">
+                    <h2>Contact</h2>
+                    <p>329 Queensberry Street, North Melbourne,<br> VIC 3051, Australia.</p>
+                    <p>123 456 7890</p>
+                    <p>Support@Edumy.Com</p>
+                </div>
+                <div class="footer-section company">
+                    <h2>Company</h2>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Become a Teacher</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section programs">
+                    <h2>Programs</h2>
+                    <ul>
+                        <li><a href="#">Nanodegree Plus</a></li>
+                        <li><a href="#">Veterans</a></li>
+                        <li><a href="#">Georgia</a></li>
+                        <li><a href="#">Self-Driving Car</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Copyright © 2023 Education Theme. All Rights Reserved</p>
+            </div>
+        </div>
+        
+    </div>
+    
+
+    
+    <script src="../Js/common.js"></script>
+</body>
+</html>

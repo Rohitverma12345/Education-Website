@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- open sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <!-- Nunito -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <title>Home</title>
+    <!-- <link rel="stylesheet" href="home.css">  -->
+    <link rel="stylesheet" href="../Css/main.css">
+</head>
+<body>
+    <div>
+        <header id="home_header">
+            <nav class="navbar">
+                
+                <div class="navbar-container">
+                    <a href="#" class="logo">
+                        <img src="../images/logo 1.png" alt="Logo">
+                    </a>
+                    <ul class="nav-links">
+                        <li><a href="../Html/home.html" class="active">Home</a></li>
+                        <li><a href="../Html/course.html">Courses</a></li>
+                        <li id="my-courses-link"><a href="../Html/mycourse.html">My Courses</a></li>
+                        <li id="add-courses-link"><a href="../Html/addcourse.html">Add Courses</a></li>
+                        <li><a href="../Html/contact.html">Contact</a></li>
+                    </ul>
+                    <div class="auth-buttons">
+                        <!-- <button onclick="logoutUser()" class="logout-btn">Logout</button> -->
+                        <!-- <button onclick="logoutUser()" class="logout-btn" style="display: none;">Logout</button> -->
+                            <button id="auth-button" onclick="redirectToLogin()"  class="login-btn">  <i class="fas fa-sign-in-alt icon-space" aria-hidden="true"></i>Login</button>
+                        
+                        
+                        <button onclick="registerUser()" class="register-btn"><i class="fas fa-users icon-space"></i>Register</button>
+                    </div>
+                     <!-- Hamburger Icon -->
+                    <div class="hamburger">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </div>
+            </nav>
+            <div class="hero-section">
+                <h1>Learn From Anywhere</h1>
+                <p>Technology Is Bringing A Massive Wave Of Evolution On Learning<br> Things In Different Ways.</p>
+                <button class="ready-btn">Ready To Get Started?</button>
+            </div>
+            
+        </header>
+
+        <!-- Course Section -->
+        <div class="course-section">
+            <div class="course-heading">
+                <h1>All Categories</h1>
+            </div>
+            
+            <div class="course-list">
+                <div class="course" onclick="openCourseDetail('Course 1')">
+                    <img src="../images/t8 1.png">
+                    <div class="overlay-text">
+                        <h3>Design</h3>
+                        <p>Over 800 Crores</p>
+                    </div>
+                </div>
+                <div class="course" onclick="openCourseDetail('Course 2')">
+                    <img src="../images/t8 2.png">
+                    <div class="overlay-text">
+                        <h3>Design</h3>
+                        <p>Over 800 Crores</p>
+                    </div>
+                </div>
+                <div class="course" onclick="openCourseDetail('Course 3')">
+                    <img src="../images/t8 3.png">
+                    <div class="overlay-text">
+                        <h3>Design</h3>
+                        <p>Over 800 Crores</p>
+                    </div>
+                </div>
+                <div class="course" onclick="openCourseDetail('Course 4')">
+                    <img src="../images/t8 4.png">
+                    <div class="overlay-text">
+                        <h3>Design</h3>
+                        <p>Over 800 Crores</p>
+                    </div>
+                </div>
+                <div class="course" onclick="openCourseDetail('Course 5')">
+                    <img src="../images/t8 5.png">
+                    <div class="overlay-text">
+                        <h3>Design</h3>
+                        <p>Over 800 Crores</p>
+                    </div>
+                </div>
+                <div class="course" onclick="openCourseDetail('Course 6')">
+                    <img src="../images/t8 6.png">
+                    <div class="overlay-text">
+                        <h3>Design</h3>
+                        <p>Over 800 Crores</p>
+                    </div>
+                </div>
+                <div class="course" onclick="openCourseDetail('Course 7')">
+                    <img src="../images/t8 7.png">
+                    <div class="overlay-text">
+                        <h3>Design</h3>
+                        <p>Over 800 Crores</p>
+                    </div>
+                </div>
+                <div class="course" onclick="openCourseDetail('Course 8')">
+                    <img src="../images/t8 8.png">
+                    <div class="overlay-text">
+                        <h3>Design</h3>
+                        <p>Over 800 Crores</p>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+
+        <!-- Ready Button -->
+        <div>
+            <button id="ready-btn">Ready To Get Started?</button>
+        </div>
+
+
+        <!-- Online Section -->
+         <div class="online">
+            <p>STARTING ONLINE LEARNING</p>
+            <h2>Enhance Your Skills With Best <br>Online Courses</h2>
+            <button class="ready-btn">Ready to Get Started?</button>
+
+         </div>
+        <!-- People Says-->
+        <div class="testimonial-container">
+            <h2 id="people">What People Say</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial-item active">
+                    <div class="testimonial-content">
+                        
+                        <blockquote>
+                            <p class="person-para">Choosing this institute was the best decision. The nurturing atmosphere and dynamic curriculum enriched my learning experience. The knowledgeable faculty empowered me to achieve my goals. Truly a top-notch education!</p>
+                            <img class="person-img" src="../images/Ellipse 24.png" alt="Person 1">
+                            <img  class="rect1" src="../images/Rectangle 33 (1).png">
+                            <img class="rect2" src="../images/Rectangle 34.png">
+                            <h3 class="person-name">Maria Latin</h3>
+                            <p class="person-rate">★★★★★</p>
+                           
+                        </blockquote>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                       
+                        <blockquote>
+                            <img class="person-img" src="../images/Ellipse 38.png" alt="Person 2">
+                            <img  class="rect1" src="../images/Rectangle 33 (1).png">
+                            <img class="rect2" src="../images/Rectangle 34.png">
+                            <h3 class="person-name">Amie</h3>
+                            <p class="person-rate">★★★★★</p>
+                            <p class="person-para">Exceptional institute! The supportive environment and expert guidance fueled my academic journey. The diverse programs prepared me for real-world challenges. Highly recommend this educational haven!</p>
+                            
+                        </blockquote>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                       
+                        <blockquote id="quote">
+                            <img class="person-img" src="../images/Ellipse 42.png" alt="Person 3">
+                            <img  class="rect1" src="../images/Rectangle 33 (1).png">
+                            <img class="rect2" src="../images/Rectangle 34.png">
+                            <h3 class="person-name">Delaney</h3>
+                            <p class="person-rate">★★★★★</p>
+                            <p class="person-para">Enrolling in this institute was life-changing. The dedicated faculty and cutting-edge resources helped me excel academically and personally. Grateful for the transformative education I received.</p>
+                            
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-navigation">
+                <button id="prevBtn">&larr;</button>
+                <button id="nextBtn">&rarr;</button>
+            </div>
+        </div>
+
+        <!-- Test -->
+         <div class="test">
+            <!-- <img src="../images/Rectangle 35.png"> -->
+            <h2>Access Your Courses Anywhere, Anytime <br>& Prepare With Practice Tests.</h2>
+         </div>
+
+         <!-- Newsletter -->
+         <div class="newsletter">
+            <h2>Get Newsletter</h2>
+            <p>Your Download Should Start Automatically, If Not Click Here. Should I Give Up, Huh?</p>
+            <div id="newsletter-btn">
+                <input type="text" placeholder="Email" name="email">
+                <button type="submit">Get It Now   </button>
+            </div>
+            
+          </div>
+
+
+
+          <!-- Footer -->
+          <div class="footer">
+            <div class="footer-container">
+                <div class="footer-section about">
+                    <img  id="logo-foot" src="../images/logo 3.png">
+                    <p>
+                        Discover a world of knowledge at our esteemed education institute. 
+                        We foster academic excellence, creativity, and personal growth. Our innovative programs ensure 
+                        a transformative learning experience, preparing students for a successful future.
+                    </p>
+                </div>
+                <div class="footer-section contact">
+                    <h2>Contact</h2>
+                    <p>329 Queensberry Street, North Melbourne,<br> VIC 3051, Australia.</p>
+                    <p>123 456 7890</p>
+                    <p>Support@Edumy.Com</p>
+                </div>
+                <div class="footer-section company">
+                    <h2>Company</h2>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Become a Teacher</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section programs">
+                    <h2>Programs</h2>
+                    <ul>
+                        <li><a href="#">Nanodegree Plus</a></li>
+                        <li><a href="#">Veterans</a></li>
+                        <li><a href="#">Georgia</a></li>
+                        <li><a href="#">Self-Driving Car</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Copyright © 2023 Education Theme. All Rights Reserved</p>
+            </div>
+        </div>
+        
+    </div>
+   
+   
+
+    
+    <script src="../Js/common.js"></script>
+</body>
+</html>
